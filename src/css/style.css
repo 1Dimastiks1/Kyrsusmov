@@ -1,0 +1,922 @@
+/* ==========================================
+   УЛЬТРА-ПРЕМІУМ LIQUID GLASSMORPHISM
+   СВІТЛА / ТЕМНА ТЕМА
+   ================================---------- */
+
+/* ТЕМНА ТЕМА (За замовчуванням) */
+:root {
+    --bg-primary: #07090e;
+    --text-main: #f8fafc;
+    --muted-text: #94a3b8;
+    --accent-gold: #f39c12;
+    --accent-blue: #00d2ff;
+    --border-glass: rgba(255, 255, 255, 0.12);
+    --border-glow: rgba(0, 210, 255, 0.3);
+    --glass-bg: rgba(15, 23, 42, 0.45);
+    --glass-hover: rgba(22, 33, 58, 0.65);
+    --shadow-glass: 0 30px 60px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    --radius-lg: 28px;
+    --radius-md: 18px;
+    --radius-sm: 12px;
+    --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* СВІТЛА ТЕМА */
+[data-theme="light"] {
+    --bg-primary: #f1f5f9;
+    --text-main: #0f172a;
+    --muted-text: #64748b;
+    --accent-gold: #d97706;
+    --accent-blue: #0284c7;
+    --border-glass: rgba(0, 0, 0, 0.08);
+    --border-glow: rgba(2, 132, 199, 0.3);
+    --glass-bg: rgba(255, 255, 255, 0.65);
+    --glass-hover: rgba(255, 255, 255, 0.85);
+    --shadow-glass: 0 20px 40px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+/* ЖИВИЙ РІДКИЙ ФОН (LIQUID BLOBS) */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+    position: relative;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Динамічні рідкі світлові плями на тлі */
+body::before,
+body::after {
+    content: '';
+    position: fixed;
+    width: 50vw;
+    height: 50vw;
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: -1;
+    opacity: 0.15;
+    animation: liquidMove 18s infinite alternate ease-in-out;
+}
+
+[data-theme="light"] body::before,
+[data-theme="light"] body::after {
+    opacity: 0.35;
+}
+
+body::before {
+    top: -10%;
+    left: -10%;
+    background: linear-gradient(135deg, var(--accent-blue), #3a7bd5);
+}
+
+body::after {
+    bottom: -10%;
+    right: -10%;
+    background: linear-gradient(135deg, var(--accent-gold), #e67e22);
+    animation-delay: -9s;
+}
+
+@keyframes liquidMove {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(5%, 10%) scale(1.1);
+    }
+
+    100% {
+        transform: translate(-5%, -5%) scale(0.95);
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* КНОПКА ПЕРЕМИКАННЯ ТЕМИ (THEME TOGGLE) */
+.theme-toggle-btn {
+    background: var(--glass-bg);
+    border: 1px solid var(--border-glass);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: var(--text-main);
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--shadow-glass);
+    font-size: 18px;
+}
+
+.theme-toggle-btn:hover {
+    background: var(--glass-hover);
+    border-color: var(--accent-blue);
+    transform: translateY(-2px);
+}
+
+/* КНОПКИ У СТИЛІ СКЛА */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 14px 28px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: var(--transition);
+    border: 1px solid var(--border-glass);
+    text-decoration: none;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.btn-primary {
+    background: rgba(2, 132, 199, 0.15);
+    color: var(--text-main);
+    border-color: rgba(2, 132, 199, 0.4);
+}
+
+.btn-primary:hover {
+    background: rgba(2, 132, 199, 0.25);
+    border-color: var(--accent-blue);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(2, 132, 199, 0.2);
+}
+
+.btn-accent {
+    background: rgba(243, 156, 18, 0.15);
+    color: var(--text-main);
+    border-color: rgba(243, 156, 18, 0.4);
+}
+
+.btn-accent:hover {
+    background: rgba(243, 156, 18, 0.25);
+    border-color: var(--accent-gold);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(243, 156, 18, 0.2);
+}
+
+.btn-outline,
+.btn-outline-dark {
+    background: var(--glass-bg);
+    color: var(--text-main);
+    border: 1px solid var(--border-glass);
+}
+
+.btn-outline:hover,
+.btn-outline-dark:hover {
+    background: var(--glass-hover);
+    border-color: rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+/* ШАПКА */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-glass);
+    padding: 16px 0;
+    transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--text-main);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo span {
+    font-weight: 400;
+    color: var(--muted-text);
+    font-size: 14px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    color: var(--muted-text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.nav-menu a:hover {
+    color: var(--text-main);
+}
+
+/* HERO СЕКЦІЯ */
+.hero {
+    padding: 180px 0 100px;
+    text-align: center;
+    position: relative;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 18px;
+    background: rgba(243, 156, 18, 0.1);
+    border: 1px solid rgba(243, 156, 18, 0.3);
+    color: var(--accent-gold);
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.hero h1 {
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+    line-height: 1.15;
+    color: var(--text-main);
+}
+
+.hero p {
+    font-size: clamp(16px, 2vw, 19px);
+    color: var(--muted-text);
+    max-width: 760px;
+    margin: 0 auto 36px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.hero-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* УНІВЕРСАЛЬНА СКЛЯНА КАРТКА */
+.stat-item,
+.feature-card,
+.course-card,
+.price-card,
+.review-card,
+.advantage-card,
+.contacts-card,
+.faq-item {
+    background: var(--glass-bg);
+    border: 1px solid var(--border-glass);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    box-shadow: var(--shadow-glass);
+    border-radius: var(--radius-lg);
+    transition: var(--transition);
+}
+
+.stat-item:hover,
+.feature-card:hover,
+.course-card:hover,
+.price-card:hover,
+.advantage-card:hover {
+    background: var(--glass-hover);
+    border-color: var(--border-glow);
+    transform: translateY(-6px);
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.stat-item {
+    padding: 24px;
+    border-radius: var(--radius-md);
+    text-align: center;
+}
+
+.stat-num {
+    display: block;
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--accent-blue);
+    margin-bottom: 6px;
+}
+
+.stat-desc {
+    font-size: 13px;
+    color: var(--muted-text);
+}
+
+/* СЕКЦІЇ */
+section {
+    padding: 100px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: clamp(28px, 3.5vw, 40px);
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    margin-bottom: 12px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--muted-text);
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto 60px;
+}
+
+/* СІТКИ */
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+/* КАРТКИ ПРО НАС / ФІЧІ */
+.feature-card {
+    padding: 32px;
+}
+
+.feature-icon {
+    font-size: 32px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: var(--muted-text);
+    font-size: 14px;
+}
+
+/* КУРСИ ТА ЦІНИ */
+.course-card,
+.price-card {
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.course-card.highlighted,
+.price-card.popular {
+    border: 1px solid rgba(243, 156, 18, 0.5);
+    background: var(--glass-bg);
+}
+
+.course-tag,
+.advantages-badge,
+.contacts-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background: rgba(2, 132, 199, 0.1);
+    color: var(--accent-blue);
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    align-self: flex-start;
+    border: 1px solid rgba(2, 132, 199, 0.2);
+}
+
+.tag-popular,
+.popular-badge {
+
+    color: var(--accent-gold);
+    border-color: rgba(243, 156, 18, 0.3);
+}
+
+.course-card h3,
+.price-card h3,
+.advantage-card-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.course-card p,
+.price-card p,
+.advantage-card-desc {
+    color: var(--muted-text);
+    font-size: 14px;
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+.course-features,
+.price-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.course-features li,
+.price-list li {
+    font-size: 14px;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 16px;
+}
+
+.price span {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--muted-text);
+}
+
+/* ПЕРЕВАГИ (ADVANTAGES) */
+.advantages-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.advantages-title {
+    font-size: clamp(28px, 3.5vw, 40px);
+    font-weight: 800;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.advantage-card {
+    padding: 30px;
+}
+
+.advantage-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+    background: rgba(2, 132, 199, 0.1);
+    border: 1px solid rgba(2, 132, 199, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-blue);
+    margin-bottom: 20px;
+}
+
+/* ВІДГУКИ */
+.review-card {
+    padding: 36px;
+}
+
+.review-text {
+    font-size: 16px;
+    color: var(--text-main);
+    font-style: italic;
+    margin-bottom: 24px;
+    line-height: 1.7;
+}
+
+.review-author strong {
+    display: block;
+    font-size: 15px;
+    color: var(--text-main);
+}
+
+.review-author span {
+    font-size: 13px;
+    color: var(--muted-text);
+}
+
+/* FAQ */
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.faq-item {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 20px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question:hover {
+    color: var(--accent-gold);
+}
+
+.faq-answer {
+    padding: 0 24px 20px;
+    color: var(--muted-text);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* КОНТАКТИ */
+.contacts-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 50px;
+    align-items: center;
+}
+
+.contacts-title {
+    font-size: clamp(28px, 3vw, 36px);
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.contacts-desc {
+    color: var(--muted-text);
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--glass-bg);
+    border: 1px solid var(--border-glass);
+    backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-main);
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background: rgba(2, 132, 199, 0.2);
+    border-color: var(--accent-blue);
+    transform: translateY(-3px);
+}
+
+.contacts-card {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.contact-icon {
+    font-size: 20px;
+    background: var(--glass-bg);
+    border: 1px solid var(--border-glass);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-item h4 {
+    font-size: 14px;
+    color: var(--muted-text);
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.contact-item a,
+.contact-item p {
+    font-size: 16px;
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+    display: block;
+}
+
+.contact-item a:hover {
+    color: var(--accent-gold);
+}
+
+.text-muted {
+    color: var(--muted-text) !important;
+    font-weight: 400 !important;
+}
+
+/* МОДАЛЬНЕ ВІКНО СКЛО */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.modal.is-open,
+.modal[aria-hidden="false"] {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+.modal-container {
+    position: relative;
+    background: var(--glass-bg);
+    border: 1px solid var(--border-glass);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    padding: 40px;
+    border-radius: var(--radius-lg);
+    max-width: 480px;
+    width: 90%;
+    box-shadow: var(--shadow-glass);
+    z-index: 2001;
+    transform: scale(0.95);
+    transition: var(--transition);
+}
+
+.modal.is-open .modal-container,
+.modal[aria-hidden="false"] .modal-container {
+    transform: scale(1);
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: var(--muted-text);
+    font-size: 28px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.modal-close:hover {
+    color: var(--text-main);
+}
+
+.modal-container h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--muted-text);
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px 16px;
+    background: var(--glass-bg);
+    border: 1px solid var(--border-glass);
+    border-radius: var(--radius-sm);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    transition: var(--transition);
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 15px rgba(2, 132, 199, 0.2);
+}
+
+.company-contacts-dev-block {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-glass);
+}
+
+.company-contacts-dev-block .contacts-title {
+    font-size: 13px;
+    color: var(--muted-text);
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.company-phones-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.company-phones-list li {
+    font-size: 14px;
+}
+
+.phone-link {
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.phone-link:hover {
+    color: var(--accent-gold);
+}
+
+.phone-label {
+    color: var(--muted-text);
+    font-size: 13px;
+}
+
+/* ФУТЕР */
+.main-footer {
+    border-top: 1px solid var(--border-glass);
+    padding: 60px 0 30px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-brand .footer-logo {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--text-main);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.footer-brand .footer-logo span {
+    font-weight: 400;
+    color: var(--muted-text);
+    font-size: 13px;
+}
+
+.footer-brand p {
+    color: var(--muted-text);
+    font-size: 14px;
+    max-width: 320px;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 32px;
+}
+
+.footer-nav a {
+    color: var(--muted-text);
+    text-decoration: none;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.footer-nav a:hover {
+    color: var(--text-main);
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--border-glass);
+    padding-top: 24px;
+    text-align: center;
+    color: var(--muted-text);
+    font-size: 13px;
+}
+
+/* АДАПТИВНІСТЬ */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .hero {
+        padding: 140px 0 60px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+}

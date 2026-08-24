@@ -1,0 +1,25 @@
+{
+  "name": "kyrsusmov",
+  "version": "1.0.0",
+  "description": "first kyrsusmov",
+  "type": "module",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1Dimastiks1/Kyrsusmov.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/1Dimastiks1/Kyrsusmov/issues"
+  },
+  "homepage": "https://github.com/1Dimastiks1/Kyrsusmov#readme",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "simple-notify": "^1.0.6"
+  }
+}

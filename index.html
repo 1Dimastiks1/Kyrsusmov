@@ -3,439 +3,1038 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Перші Київські Курси | Академічна англійська та підготовка до іспитів</title>
+  <title>Перші Київські Курси | Кам'янець-Подільський | Іноземні мови, НМТ та міжнародні іспити</title>
+  <meta name="description" content="Мережа освітніх закладів «Перші Київські Курси» у Кам'янці-Подільському: понад 27 років досвіду. Англійська, польська, німецька, італійська, іспанська для дітей та дорослих, підготовка до НМТ та IELTS.">
+  <link rel="shortcut icon" href="https://res2.weblium.site/res/65784c26a16541000fbe2749/657f6a28286f8a000e39b70d_optimized" type="image/png">
 
   <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="./src/css/reset.css">
   <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
 
-  <!-- ШАПКА САЙТУ -->
-  <header>
-    <div class="container header-content">
-      <a href="#" class="logo">Перші Київські Курси <span></a>
-      <nav>
-        <ul class="nav-menu">
-          <li><a href="#main">Головна</a></li>
-          <li><a href="#about">Про нас</a></li>
-          <li><a href="#courses">Курси та Іспити</a></li>
-          <li><a href="#pricing">Вартість</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contacts">Контакти</a></li>
+    <!-- ================= ВЕРХНЯ КОНТАКТНА ПАНЕЛЬ ================= -->
+  <div class="header-top-bar">
+    <div class="container header-top-inner">
+      <div class="header-top-left">
+        <span>📍 Кам'янець-Подільський: вул. Симона Петлюри, 16 • вул. Героїв Маріуполя, 4-м</span>
+      </div>
+      <div class="header-top-right">
+        <a href="tel:+380673816438" class="header-top-phone">📞 (067) 38 164 38</a>
+        <span class="header-top-sep">•</span>
+        <a href="tel:+380688829988" class="header-top-phone">📞 (068) 88 299 88</a>
+        <span class="header-top-sep">•</span>
+        <span class="header-top-hours">Пн–Пт: 10:00–19:00</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= ГОЛОВНА ШАПКА САЙТУ ================= -->
+  <header class="main-header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo-link" aria-label="Перші Київські Курси">
+        <img src="https://res2.weblium.site/res/65784c26a16541000fbe2749/65c23eeff71caf000fb826c2" alt="Логотип Перші Київські Курси" class="logo-emblem" width="48" height="48" onerror="this.src='https://res2.weblium.site/res/65784c26a16541000fbe2749/657f6a28286f8a000e39b70d_optimized'">
+        <div class="logo-texts">
+          <span class="logo-title">Перші Київські Курси</span>
+          <span class="logo-subtitle">Кам'янець-Подільський • 27+ років</span>
+        </div>
+      </a>
+
+      <nav aria-label="Основна навігація">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link">Головна</a></li>
+          <li><a href="#courses" class="nav-link">Курси</a></li>
+          <li><a href="#quiz" class="nav-link">Експрес-тест <span class="nav-badge-pill">Тест</span></a></li>
+          <li><a href="#special" class="nav-link">Paddington & Camp</a></li>
+          <li><a href="#team" class="nav-link">Викладачі</a></li>
+          <li><a href="#calculator" class="nav-link">Ціни</a></li>
+          <li><a href="#reviews" class="nav-link">Відгуки</a></li>
+          <li><a href="#contacts" class="nav-link">Контакти</a></li>
+          <li class="mobile-nav-footer">
+            <a href="tel:+380673816438" class="mobile-nav-phone">📞 (067) 38 164 38</a>
+            <a href="tel:+380688829988" class="mobile-nav-phone">📞 (068) 88 299 88</a>
+            <button class="btn btn-accent" style="width: 100%;" onclick="openModal('Безкоштовне тестування')">Записатися на тест 🚀</button>
+          </li>
         </ul>
       </nav>
-      <button class="theme-toggle-btn" aria-label="Змінити тему">☀️</button>
-      <button class="btn btn-primary" onclick="openModal('Безкоштовне тестування')">Безкоштовний тест</button>
+
+      <div class="header-actions">
+        <a href="tel:+380673816438" class="header-call-btn" title="Зателефонувати">
+          📞 (067) 38 164 38
+        </a>
+        <button class="theme-toggle-btn" aria-label="Змінити тему">🌙</button>
+        <button class="header-cta-btn" onclick="openModal('Безкоштовне тестування та консультація')">
+          Безкоштовний тест
+        </button>
+        <button class="mobile-burger-btn" aria-label="Відкрити меню" aria-expanded="false">☰</button>
+      </div>
     </div>
   </header>
 
-  <!-- HERO-СЕКЦІЯ -->
-  <section id="main" class="hero">
+  <!-- ================= HERO СЕКЦІЯ ================= -->
+  <section id="hero" class="hero-section">
     <div class="container">
-      <div class="badge">🚀 Набір у групи 2026 відкрито</div>
-      <h1>Твій впевнений крок до вступу та успішного складання іспитів</h1>
-      <p>Спеціалізована підготовка до <strong>IELTS, TOEFL, FCE та НМТ</strong>. Авторські методики, інтенсивна практика та гарантія досягнення необхідного балу для вступу в Україні та за кордоном.</p>
-      
-      <div class="hero-actions">
-        <button class="btn btn-accent" onclick="openModal('Консультація з підбору курсу')">Записатися на консультацію</button>
-        <a href="#courses" class="btn btn-outline">Переглянути програми</a>
-      </div>
+      <div class="hero-grid">
+        <div class="hero-text-col">
+          <div class="hero-badge-row">
+            <span class="hero-badge-accent">🔥 Набір на 2026 рік відкрито</span>
+            <span class="hero-badge-gold">⭐ 27+ років досвіду викладання</span>
+          </div>
 
-      <div class="hero-stats">
-        <div class="stat-item">
-          <span class="stat-num">98%</span>
-          <span class="stat-desc">студентів складають іспити на бали B2–C1</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">27+</span>
-          <span class="stat-desc">років успішного викладання</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">4 500+</span>
-          <span class="stat-desc">випускників вступили до обраних ВНЗ</span>
-        </div>
-      </div>
-    </div>
-  </section>
+          <h1 class="hero-title">
+            Твій надійний простір для <span class="highlight-blue">вільного володіння</span> іноземними мовами
+          </h1>
 
-  <!-- ПРО НАС / ПЕРЕВАГИ -->
-  <section id="about" class="why-us">
-    <div class="container">
-      <h2 class="section-title">Чому нам довіряють підготовку до іспитів</h2>
-      <p class="section-subtitle">Ми не вчимо "взагалі" — ми готуємо до конкретного результату за чіткими критеріями оцінювання.</p>
-      
-      <div class="grid-4">
-        <div class="feature-card">
-          <div class="feature-icon">🎯</div>
-          <h3>Орієнтація на специфіку</h3>
-          <p>Глибоке опрацювання регламенту та критеріїв оцінювання IELTS, TOEFL та НМТ. Жодних несподіванок на іспиті.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">👨‍🏫</div>
-          <h3>Сертифіковані експерти</h3>
-          <p>Викладачі з міжнародними дипломами CELTA/DELTA/TEFL та практичним досвідом підготовки вступників.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">📝</div>
-          <h3>Симуляційні тести (Mock Tests)</h3>
-          <p>Щомісячне проходження тестових іспитів у реальних часових умовах для подолання стресу.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">👥</div>
-          <h3>Камерні групи (4–8 осіб)</h3>
-          <p>Усі студенти активні 100% часу заняття. Викладач приділяє увагу кожному для детального фідбеку.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+          <p class="hero-desc">
+            Провідна мережа мовних центрів у Кам'янці-Подільському. Вивчайте <strong>англійську, польську, німецьку, італійську та іспанську</strong> за автентичними програмами Oxford та Cambridge. Гарантована підготовка до <strong>НМТ / ЗНО та іспитів IELTS, TOEFL, CEFR</strong>.
+          </p>
 
-  <!-- КУРСИ ТА ІСПИТИ -->
-  <section id="courses" class="courses">
-    <div class="container">
-      <h2 class="section-title">Навчальні програми та курси</h2>
-      <p class="section-subtitle">Оберіть напрямок, який відповідає вашим академічним та професійним цілям.</p>
-      
-      <div class="grid-3">
+          <div class="hero-actions">
+            <a href="#quiz" class="btn btn-accent btn-lg">
+              🎯 Пройти експрес-тест (2 хв)
+            </a>
+            <a href="#courses" class="btn btn-outline btn-lg">
+              Переглянути курси ↓
+            </a>
+          </div>
 
-        <div class="course-card">
-          <span class="course-tag">Міжнародний сертифікат</span>
-          <h3>Підготовка до IELTS (Academic / General)</h3>
-          <p>Інтенсивна підготовка до всіх 4 блоків: Reading, Writing, Listening та Speaking. Розбір складних типів есе та усного мовлення.</p>
-          <ul class="course-features">
-            <li><strong>Тривалість:</strong> 3–6 місяців</li>
-            <li><strong>Рівень для старту:</strong> від B1</li>
-            <li><strong>Формат:</strong> 2-3 рази на тиждень по 90 хв</li>
-          </ul>
-          <button class="btn btn-primary" onclick="openModal('Курс IELTS')">Детальніше та запис</button>
-        </div>
-
-        <div class="course-card highlighted">
-          <span class="course-tag tag-popular">Вступ в Україні</span>
-          <h3>Комплексна підготовка до НМТ / ЗНО</h3>
-          <p>Систематичне опрацювання граматики, розширення словникового запасу та алгоритми вирішення тестових завдань підвищеної складності.</p>
-          <ul class="course-features">
-            <li><strong>Тривалість:</strong> 8–9 місяців (навчальний рік)</li>
-            <li><strong>Рівень для старту:</strong> будь-який</li>
-            <li><strong>Формат:</strong> 2 рази на тиждень по 120 хв</li>
-          </ul>
-          <button class="btn btn-accent" onclick="openModal('Курс НМТ')">Забронювати місце</button>
-        </div>
-
-        <div class="course-card">
-          <span class="course-tag">Академічна мова</span>
-          <h3>English for Academic Purposes (EAP)</h3>
-          <p>Курс для майбутніх студентів закордонних ВНЗ: написання наукових робіт, есе, мотиваційних листів та ведення дискусій.</p>
-          <ul class="course-features">
-            <li><strong>Тривалість:</strong> 4 місяці</li>
-            <li><strong>Рівень для старту:</strong> від B2</li>
-            <li><strong>Формат:</strong> 2 рази на тиждень по 90 хв</li>
-          </ul>
-          <button class="btn btn-primary" onclick="openModal('Курс EAP')">Детальніше та запис</button>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ЦІНИ ТА ПАКЕТИ -->
-  <section id="pricing" class="pricing">
-    <div class="container">
-      <h2 class="section-title">Вартість навчання</h2>
-      <p class="section-subtitle">Прозорі умови без прихованих платежів. Навчальні матеріали включено у вартість.</p>
-      
-      <div class="grid-3">
-        <div class="price-card">
-          <h3>Групові заняття</h3>
-          <div class="price">від 2 400 <span>грн / місяць</span></div>
-          <p>Ідеально для систематичного навчання в колі однодумців.</p>
-          <ul class="price-list">
-            <li>Групи від 4 до 8 осіб</li>
-            <li>2 заняття на тиждень</li>
-            <li>Доступ до онлайн-платформи</li>
-            <li>Безкоштовний Mock Test</li>
-          </ul>
-          <button class="btn btn-outline-dark" onclick="openModal('Пакет Груповий')">Обрати пакет</button>
-        </div>
-
-        <div class="price-card popular">
-          <div class="popular-badge">Найпопулярніший</div>
-          <h3>Інтенсив-іспит</h3>
-          <div class="price">від 3 800 <span>грн / місяць</span></div>
-          <p>Швидка підготовка до IELTS/НМТ у стислі терміни.</p>
-          <ul class="price-list">
-            <li>Групи до 6 осіб</li>
-            <li>3 заняття на тиждень</li>
-            <li>Перевірка письмових робіт експертом</li>
-            <li>Симуляція іспиту щомісяця</li>
-          </ul>
-          <button class="btn btn-accent" onclick="openModal('Пакет Інтенсив')">Обрати пакет</button>
-        </div>
-
-        <div class="price-card">
-          <h3>Індивідуальний</h3>
-          <div class="price">від 650 <span>грн / урок</span></div>
-          <p>Максимальна гнучкість графіку та персональна програма.</p>
-          <ul class="price-list">
-            <li>Формат 1-на-1 з викладачем</li>
-            <li>Індивідуальний темп і графік</li>
-            <li>Фокус на ваші слабкі сторони</li>
-            <li>Персональний фідбек</li>
-          </ul>
-          <button class="btn btn-outline-dark" onclick="openModal('Пакет Індивідуальний')">Обрати пакет</button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- СЕКЦІЯ ПЕРЕВАГИ -->
-<section class="advantages-section">
-  <div class="container">
-    <div class="advantages-header">
-      <span class="advantages-badge">Чому обирають нас</span>
-      <h2 class="advantages-title">Наші переваги</h2>
-    </div>
-
-    <div class="advantages-grid">
-      
-      <!-- Картка 1 -->
-      <div class="advantage-card">
-        <div class="advantage-icon">
-          <!-- Іконка Медаль/Досвід -->
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/></svg>
-        </div>
-        <h3 class="advantage-card-title">27 річний досвід навчання</h3>
-        <p class="advantage-card-desc">
-          За цей час ми відпрацювали власний, найбільш ефективний і легкий стиль викладання
-        </p>
-      </div>
-
-      <!-- Картка 2 -->
-      <div class="advantage-card">
-        <div class="advantage-icon">
-          <!-- Іконка Сертифікат -->
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-4"/><path d="M8 18v-2"/><path d="M16 18v-6"/></svg>
-        </div>
-        <h3 class="advantage-card-title">Сертифіковані викладачі</h3>
-        <p class="advantage-card-desc">
-          Наші викладачі мають міжнародні сертифікати Cambridge
-        </p>
-      </div>
-
-      <!-- Картка 3 -->
-      <div class="advantage-card">
-        <div class="advantage-icon">
-          <!-- Іконка Годинник -->
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        </div>
-        <h3 class="advantage-card-title">Ми цінуємо ваш час</h3>
-        <p class="advantage-card-desc">
-          Гнучкий аудиторний графік та онлайн заняття
-        </p>
-      </div>
-
-      <!-- Картка 4 -->
-      <div class="advantage-card">
-        <div class="advantage-icon">
-          <!-- Іконка Люди/Група -->
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        </div>
-        <h3 class="advantage-card-title">Групи 8-10 студентів</h3>
-        <p class="advantage-card-desc">
-          Ми за особистий підхід та увагу до кожного студента
-        </p>
-      </div>
-
-      <!-- Картка 5 -->
-      <div class="advantage-card">
-        <div class="advantage-icon">
-          <!-- Іконка Дошка/Носії -->
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-        </div>
-        <h3 class="advantage-card-title">Мовні клуби та заняття з носіями мов</h3>
-        <p class="advantage-card-desc">
-          Різні активності для активного застосування вивченого на практиці
-        </p>
-      </div>
-
-      <!-- Картка 6 -->
-      <div class="advantage-card">
-        <div class="advantage-icon">
-          <!-- Іконка Шапка випускника -->
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-        </div>
-        <h3 class="advantage-card-title">Вивчили більше 5000 студентів</h3>
-        <p class="advantage-card-desc">
-          Всі, хто успішно закінчили наші курси - отримали сертифікати CEFR
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-  <!-- ВІДГУКИ -->
-  <section class="reviews">
-    <div class="container">
-      <h2 class="section-title">Історії успіху наших студентів</h2>
-      <div class="grid-2">
-        <div class="review-card">
-          <p class="review-text">"Завдяки курсу IELTS Academic я склала іспит на 7.5 балів з першої спроби! Особливо допомогла детальна перевірка есе та усні тренінги. Зараз навчаюся в університеті у Вроцлаві."</p>
-          <div class="review-author">
-            <strong>Анастасія М.</strong>
-            <span>Склала IELTS на 7.5 (B2/C1)</span>
+          <div class="hero-stats-row">
+            <div class="hero-stat-card">
+              <span class="hero-stat-num">5 500+</span>
+              <span class="hero-stat-label">випускників здобули сертифікати CEFR</span>
+            </div>
+            <div class="hero-stat-card">
+              <span class="hero-stat-num">27 років</span>
+              <span class="hero-stat-label">бездоганної академічної репутації</span>
+            </div>
+            <div class="hero-stat-card">
+              <span class="hero-stat-num">5 мов</span>
+              <span class="hero-stat-label">для дітей від 2 років та дорослих</span>
+            </div>
           </div>
         </div>
-        <div class="review-card">
-          <p class="review-text">"Готувався до НМТ з англійської мови. Отримав 194 бали! Викладачі вміють пояснити найскладніші граматичні правила простими словами. Дуже рекомендую!"</p>
-          <div class="review-author">
-            <strong>Максим К.</strong>
-            <span>Результат НМТ: 194 бали</span>
+
+        <div class="hero-visual-wrapper">
+          <div class="hero-main-photo-card">
+            <img src="https://res2.weblium.site/res/65784c26a16541000fbe2749/65c64afedc3ff6000fa26dfa_optimized_1395_c1395x931-0x0" alt="Навчальний процес у Перших Київських Курсах">
+          </div>
+          
+          <div class="hero-floating-badge-top">
+            <span>🎓 Сертифікати Cambridge & CEFR</span>
+          </div>
+
+          <div class="hero-floating-badge">
+            <div class="hero-floating-icon">👥</div>
+            <div>
+              <strong style="display:block; font-size: 15px;">Камерні міні-групи</strong>
+              <span style="font-size: 13px; color: var(--text-muted);">Лише 4–8 студентів для максимуму практики</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section id="faq" class="faq">
+  <!-- ================= ІНТЕРАКТИВНИЙ ЕКСПРЕС-ТЕСТ ================= -->
+  <section id="quiz" class="quiz-section">
     <div class="container">
-      <h2 class="section-title">Часті запитання (FAQ)</h2>
-      <div class="faq-list">
+      <div class="section-header">
+        <span class="section-badge">⚡ Інтерактивний тест</span>
+        <h2 class="section-title">Перевір свій рівень англійської за 2 хвилини</h2>
+        <p class="section-subtitle">
+          Дайте відповіді на 5 коротких запитань і дізнайтеся свій орієнтовний рівень (A1–C1) та найкращу програму навчання в ПКК.
+        </p>
+      </div>
+
+      <div class="quiz-card">
+        <div id="quizActiveWrap">
+          <div class="quiz-progress-bar-wrap">
+            <div id="quizProgressBar" class="quiz-progress-bar"></div>
+          </div>
+
+          <div class="quiz-header-meta">
+            <span id="quizCount">Питання 1 з 5</span>
+            <span>English Proficiency Mini-Check</span>
+          </div>
+
+          <h3 id="quizQuestionTitle" class="quiz-question-title">Завантаження питання...</h3>
+
+          <div id="quizOptionsGrid" class="quiz-options-grid">
+            <!-- Генерується динамічно через JS -->
+          </div>
+
+          <div class="quiz-footer">
+            <span style="font-size: 14px; color: var(--text-muted);">Оберіть один варіант відповіді</span>
+            <button id="quizNextBtn" class="btn btn-primary" disabled>Наступне питання →</button>
+          </div>
+        </div>
+
+        <!-- Блок результату -->
+        <div id="quizResultBox" class="quiz-result-box">
+          <div id="quizLevelBadge" class="quiz-result-level-badge">B1 (Intermediate)</div>
+          <h3 id="quizResultTitle" class="quiz-result-title">Чудовий результат!</h3>
+          <p id="quizResultDesc" class="quiz-result-desc">
+            Опис результату та рекомендації...
+          </p>
+          <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+            <button id="quizResultCta" class="btn btn-accent btn-lg">Записатися на безкоштовний пробний урок</button>
+            <button id="quizRestartBtn" class="btn btn-outline">Пройти ще раз ↻</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= КУРСИ ТА НАВЧАЛЬНІ ПРОГРАМИ ================= -->
+  <section id="courses" class="courses-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">📚 Наші напрямки</span>
+        <h2 class="section-title">Освітні програми Перших Київських Курсів</h2>
+        <p class="section-subtitle">
+          Від перших слів для малюків до міжнародних іспитів найвищого рівня для вступу в закордонні університети.
+        </p>
+      </div>
+
+      <!-- Фільтр-таби -->
+      <div class="course-filter-tabs">
+        <button class="tab-btn active" data-filter="all">Всі напрямки (6)</button>
+        <button class="tab-btn" data-filter="kids">Дошкільнята</button>
+        <button class="tab-btn" data-filter="teens">Школярі</button>
+        <button class="tab-btn" data-filter="nmt">НМТ / ЗНО</button>
+        <button class="tab-btn" data-filter="exams">IELTS & TOEFL</button>
+        <button class="tab-btn" data-filter="adults">Дорослі</button>
+        <button class="tab-btn" data-filter="camp">Літній табір</button>
+      </div>
+
+      <!-- Сітка карток курсів -->
+      <div class="courses-grid">
+
+        <!-- Картка 1: Дошкільнята -->
+        <div class="course-card" data-category="kids">
+          <div class="course-card-image-wrap">
+            <img src="https://res2.weblium.site/res/65784c26a16541000fbe2749/65c238926d0726000f82bdd9_optimized" alt="Іноземні мови для дошкільнят">
+            <span class="course-card-category-badge">2–6 років</span>
+            <div class="course-card-price-badge">від <span>240 грн</span> / заняття</div>
+          </div>
+          <div class="course-card-body">
+            <h3 class="course-card-title">Іноземні мови для дошкільнят</h3>
+            <p class="course-card-desc">
+              Ігрова методика занурення в мовне середовище без зубріння. Діти вчать пісні, казки, розвивають моторику та вимову природним шляхом.
+            </p>
+            <ul class="course-features-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Формат: міні-групи до 6 дітей
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Тривалість: 60 хв, 2 рази на тиждень
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Матеріали: Oxford Phonics World
+              </li>
+            </ul>
+            <button class="btn btn-primary" onclick="openModal('Курс для дошкільнят (2-6 років)')">Записатися на пробне</button>
+          </div>
+        </div>
+
+        <!-- Картка 2: Школярі -->
+        <div class="course-card" data-category="teens">
+          <div class="course-card-image-wrap">
+            <img src="https://res2.weblium.site/res/65784c26a16541000fbe2749/68ac4f3db22075f4b4346104_optimized_1280_c1280x851-0x0" alt="Іноземні мови для школярів">
+            <span class="course-card-category-badge">1–11 класи</span>
+            <div class="course-card-price-badge">від <span>330 грн</span> / заняття</div>
+          </div>
+          <div class="course-card-body">
+            <h3 class="course-card-title">Іноземні мови для школярів</h3>
+            <p class="course-card-desc">
+              Подолання шкільного мовного бар'єру, розвиток впевненої розмовної мови, граматики та аудіювання. Англійська, німецька та польська мови.
+            </p>
+            <ul class="course-features-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Групи 4–8 учнів за віком та рівнем
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Відпрацювання пропусків у суботу
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Доступ до особистого кабінету студента
+              </li>
+            </ul>
+            <button class="btn btn-primary" onclick="openModal('Курс для школярів (1-11 класи)')">Записатися на пробне</button>
+          </div>
+        </div>
+
+        <!-- Картка 3: НМТ / ЗНО (Популярний) -->
+        <div class="course-card highlighted" data-category="teens nmt">
+          <div class="course-card-image-wrap">
+            <img src="https://res2.weblium.site/res/65784c26a16541000fbe2749/697b28eb9537f0b5abace35f_optimized_1280_c1280x960-0x0" alt="Підготовка до НМТ">
+            <span class="course-card-category-badge" style="background: var(--pkk-coral);">🏆 ТОП Результати</span>
+            <div class="course-card-price-badge">від <span>330 грн</span> / 90 хв</div>
+          </div>
+          <div class="course-card-body">
+            <h3 class="course-card-title">Комплексна підготовка до НМТ / ЗНО</h3>
+            <p class="course-card-desc">
+              Інтенсивний курс для випускників 10–11 класів. Алгоритми швидкого вирішення тестів, граматичні пастки, регулярні Mock Tests за таймером. Середній бал студентів — 190+.
+            </p>
+            <ul class="course-features-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                2 рази на тиждень по 90 хв
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Щомісячна симуляція реального НМТ
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Викладачі — сертифіковані експерти ЗНО
+              </li>
+            </ul>
+            <button class="btn btn-accent" onclick="openModal('Курс підготовки до НМТ/ЗНО')">Забронювати місце</button>
+          </div>
+        </div>
+
+        <!-- Картка 4: Міжнародні іспити IELTS & TOEFL -->
+        <div class="course-card" data-category="exams adults">
+          <div class="course-card-image-wrap">
+            <img src="https://res2.weblium.site/res/65784c26a16541000fbe2749/68ac51b0b22075f4b4346b5f_optimized_1280_c1280x851-0x0" alt="Підготовка до IELTS">
+            <span class="course-card-category-badge">CEFR B2–C1</span>
+            <div class="course-card-price-badge">від <span>330 грн</span> / 90 хв</div>
+          </div>
+          <div class="course-card-body">
+            <h3 class="course-card-title">Підготовка до IELTS, TOEFL, FCE, CAE</h3>
+            <p class="course-card-desc">
+              Спеціалізований тренінг для виїзду, роботи та вступу до іноземних ВНЗ. Глибоке відпрацювання Academic Writing, швидкого читання та впевненого мовлення.
+            </p>
+            <ul class="course-features-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Детальна перевірка есе викладачами CELTA
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Speaking тренінги та робота з таймером
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Гарантія результату B2–C1
+              </li>
+            </ul>
+            <button class="btn btn-primary" onclick="openModal('Підготовка до IELTS / TOEFL / FCE')">Записатися на тестування</button>
+          </div>
+        </div>
+
+        <!-- Картка 5: Дорослі та корпоративні -->
+        <div class="course-card" data-category="adults">
+          <div class="course-card-image-wrap">
+            <img src="https://res2.weblium.site/res/65784c26a16541000fbe2749/68ac5356b22075f4b434731f_optimized_960_c960x1280-0x0" alt="Іноземні мови для дорослих">
+            <span class="course-card-category-badge">A1 – C1</span>
+            <div class="course-card-price-badge">від <span>330 грн</span> / заняття</div>
+          </div>
+          <div class="course-card-body">
+            <h3 class="course-card-title">Іноземні мови для дорослих</h3>
+            <p class="course-card-desc">
+              Англійська, польська, німецька, італійська, іспанська. Курси General English, Business English, підготовка до співбесід в IT та міжнародних компаніях.
+            </p>
+            <ul class="course-features-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Гнучкий вечірній графік або онлайн у Zoom
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Акцент на розмовну практику (80% уроку)
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Розмовні клуби з носіями щотижня
+              </li>
+            </ul>
+            <button class="btn btn-primary" onclick="openModal('Курс для дорослих')">Записатися на курс</button>
+          </div>
+        </div>
+
+        <!-- Картка 6: Літній табір -->
+        <div class="course-card" data-category="camp kids teens">
+          <div class="course-card-image-wrap">
+            <img src="https://res2.weblium.site/res/65784c26a16541000fbe2749/6641d8e3587eb5b25b877847_optimized_1000_c1000x667-0x0" alt="English Summer Camp">
+            <span class="course-card-category-badge" style="background: var(--pkk-emerald);">☀️ Літо 2026</span>
+            <div class="course-card-price-badge"><span>8 800 грн</span> / 2 тижні</div>
+          </div>
+          <div class="course-card-body">
+            <h3 class="course-card-title">English Summer Camp</h3>
+            <p class="course-card-desc">
+              Денний табір для школярів у Кам'янці-Подільському: щоденні speaking клуби, носії мови, захоплюючі квести, творчі майстер-класи та екскурсії.
+            </p>
+            <ul class="course-features-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Понеділок – П'ятниця з 10:00 до 16:00
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Повне занурення в мовне середовище
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Смачні ланчі та активний відпочинок
+              </li>
+            </ul>
+            <button class="btn btn-gold" onclick="openModal('English Summer Camp 2026')">Забронювати путівку</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= СПЕЦІАЛЬНІ ПРОГРАМИ: PADDINGTON & SUMMER CAMP ================= -->
+  <section id="special" class="special-programs-section">
+    <div class="container">
+      <div class="special-programs-grid">
         
-        <div class="faq-item">
-          <div class="faq-question" onclick="toggleFaq(this)">Як дізнатися свій поточний рівень англійської?</div>
-          <div class="faq-answer">Перед початком навчання ми проводимо безкоштовне комплексне тестування, яке включає письмову частину та коротку співбесіду з методистом.</div>
+        <!-- Блок Paddington -->
+        <div class="special-banner-card">
+          <div class="special-banner-media">
+            <img src="https://res2.weblium.site/res/65784c26a16541000fbe2749/65c238926d0726000f82bdd9_optimized" alt="Англомовний простір Paddington">
+          </div>
+          <div class="special-banner-content">
+            <span class="special-banner-badge badge-paddington">🧸 Для найменших (2–6 років)</span>
+            <h3 class="special-banner-title">Англомовний простір "Paddington"</h3>
+            <p class="special-banner-desc">
+              Унікальна група неповного дня у затишному та безпечному просторі. Дитина перебуває в англомовному середовищі, розвиває сенсорику, логіку, взаємодіє з однолітками та засвоює другу мову як рідну.
+            </p>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+              <span style="font-weight: 800; font-size: 18px; color: var(--pkk-blue);">680 грн / день</span>
+              <button class="btn btn-outline" onclick="openModal('Англомовний простір Paddington')">Дізнатися розклад</button>
+            </div>
+          </div>
         </div>
 
-        <div class="faq-item">
-          <div class="faq-question" onclick="toggleFaq(this)">В якому форматі проходять заняття?</div>
-          <div class="faq-answer">Ви можете обрати зручний формат: інтерактивні онлайн-заняття у Zoom або очні уроки в затишних аудиторіях нашої мережі.</div>
+        <!-- Блок Літній Табір -->
+        <div class="special-banner-card">
+          <div class="special-banner-media">
+            <img src="https://res2.weblium.site/res/65784c26a16541000fbe2749/6641d8e3587eb5b25b877847_optimized_1000_c1000x667-0x0" alt="English Summer Camp">
+          </div>
+          <div class="special-banner-content">
+            <span class="special-banner-badge badge-camp">🌴 Канікули з користю</span>
+            <h3 class="special-banner-title">Літній табір "English Summer Camp"</h3>
+            <p class="special-banner-desc">
+              10 днів суцільного драйву, спілкування англійською без гаджетів та нудних уроків! Справжні вожаті-викладачі, пізнавальні подорожі містом, майстер-класи та нові друзі на все життя.
+            </p>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+              <span style="font-weight: 800; font-size: 18px; color: var(--pkk-emerald);">8 800 грн / зміна</span>
+              <button class="btn btn-primary" onclick="openModal('Запис у English Summer Camp')">Записатися в табір</button>
+            </div>
+          </div>
         </div>
-
 
       </div>
     </div>
   </section>
 
-  <!-- МОДАЛЬНЕ ВІКНО -->
-  <div id="callbackModal" class="modal" aria-hidden="true">
-    <div class="modal-overlay" onclick="closeModal()"></div>
-    <div class="modal-container">
-      <button class="modal-close" onclick="closeModal()">&times;</button>
-      
-      <h2 id="modalTitle">Записатися на консультацію</h2>
-      <p style="color: var(--muted-text); margin-bottom: 20px; font-size: 14px;">
-        Залиште свої дані, і наш менеджер зателефонує вам протягом 15 хвилин.
-      </p>
-
-      <form onsubmit="handleFormSubmit(event)">
-        <div class="form-group">
-          <label for="clientName">Ваше ім'я:</label>
-          <input type="text" id="clientName" placeholder="Олександр" required>
-        </div>
-
-        <div class="form-group">
-          <label for="clientPhone">Ваш номер телефону:</label>
-          <input type="tel" id="clientPhone" placeholder="+380 (XX) XXX-XX-XX" required>
-        </div>
-
-        <button type="submit" class="btn btn-primary" style="width: 100%;">Надіслати заявку</button>
-      </form>
-
-      <!-- DEV NOTE: Контакти компанії -->
-      <div class="company-contacts-dev-block" id="contacts">
-        <p class="contacts-title">Або зателефонуйте нам напряму:</p>
-        <ul class="company-phones-list">
-          <!-- TODO (DEV): Вкажіть діючі номери телефонів -->
-         
-          <li><a href="tel:+380673816438" class="phone-link">📱+380673816438</a> <span class="phone-label"></span></li>
-          <li><a href="tel:+380688829988" class="phone-link">📱+380688829988</a> <span class="phone-label"></span></li>
-        </ul>
+  <!-- ================= НАША КОМАНДА / ВИКЛАДАЧІ ================= -->
+  <section id="team" class="team-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">👨‍🏫 Наші експерти</span>
+        <h2 class="section-title">Викладачі Перших Київських Курсів</h2>
+        <p class="section-subtitle">
+          Успіх наших студентів — у професіоналізмі, щирій любові до своєї справи та постійному розвитку команди.
+        </p>
       </div>
 
-    </div>
-  </div>
+      <!-- Лідер команди: Ірина Ярема -->
+      <div class="team-lead-banner">
+        <div class="team-lead-photo">
+          <img src="https://res2.weblium.site/res/65784c26a16541000fbe2749/65ca20b304743a000f6678f0_optimized_1669_c1574x2357-71x54.webp" alt="Ірина Ярема">
+        </div>
+        <div class="team-lead-info">
+          <span class="team-lead-badge">Керівниця освітнього центру</span>
+          <h3 class="team-lead-name">Ірина Ярема</h3>
+          <p class="team-lead-role">Викладач англійської та італійської мов</p>
+          <p class="team-lead-quote">
+            «Обмін енергією з нашими студентами дає поштовх до нових пошуків сучасних засобів, матеріалів та методик. Ми створюємо атмосферу, де мова стає природною частиною вашого життя!»
+          </p>
+          <button class="btn btn-gold" onclick="openModal('Консультація з методистом Іриною Яремою')">
+            Записатися на співбесіду
+          </button>
+        </div>
+      </div>
 
-  <!-- СЕКЦІЯ КОНТАКТИ -->
+      <!-- Сітка викладачів (реальні фото та досвід) -->
+      <div class="teachers-grid">
+
+        <!-- Викладач 1 -->
+        <div class="teacher-card">
+          <div class="teacher-photo-wrap">
+            <img src="https://res2.weblium.site/res/65784c26a16541000fbe2749/65ca213704743a000f667a5c_optimized_705_c624x934" alt="Ольга Груднєва" loading="lazy">
+            <span class="teacher-exp-tag">Стаж: 16 років</span>
+          </div>
+          <div class="teacher-card-body">
+            <h4 class="teacher-name">Ольга Груднєва</h4>
+            <p class="teacher-subject">Англійська для підлітків, дорослих, НМТ/ЗНО, IELTS</p>
+            <p class="teacher-credo">«A teacher takes a hand, opens a mind, and touches a heart.»</p>
+          </div>
+        </div>
+
+        <!-- Викладач 2 -->
+        <div class="teacher-card">
+          <div class="teacher-photo-wrap">
+            <img src="https://res2.weblium.site/res/65784c26a16541000fbe2749/65ca21dbf033a7000f25c55f_optimized_636_c624x934" alt="Ірина Дубілей" loading="lazy">
+            <span class="teacher-exp-tag">Стаж: 23 роки</span>
+          </div>
+          <div class="teacher-card-body">
+            <h4 class="teacher-name">Ірина Дубілей</h4>
+            <p class="teacher-subject">Викладач вищої категорії англійської мови</p>
+            <p class="teacher-credo">«Your personality creates your reality. Вірте у свій потенціал!»</p>
+          </div>
+        </div>
+
+        <!-- Викладач 3 -->
+        <div class="teacher-card">
+          <div class="teacher-photo-wrap">
+            <img src="https://res2.weblium.site/res/65784c26a16541000fbe2749/65ca20c331959f000fb3ad74_optimized_624_c624x934" alt="Наталія Сіра" loading="lazy">
+            <span class="teacher-exp-tag">Стаж: 10 років</span>
+          </div>
+          <div class="teacher-card-body">
+            <h4 class="teacher-name">Наталія Сіра</h4>
+            <p class="teacher-subject">Викладач англійської мови для дітей та підлітків</p>
+            <p class="teacher-credo">«You can! Зробіть перший крок і все обов'язково вдасться.»</p>
+          </div>
+        </div>
+
+        <!-- Викладач 4 -->
+        <div class="teacher-card">
+          <div class="teacher-photo-wrap">
+            <img src="https://res2.weblium.site/res/65784c26a16541000fbe2749/65cf5714ec461b000e77ce8f_optimized_636_c624x935" alt="Тетяна Качаєва" loading="lazy">
+            <span class="teacher-exp-tag">Стаж: 10 років</span>
+          </div>
+          <div class="teacher-card-body">
+            <h4 class="teacher-name">Тетяна Качаєва</h4>
+            <p class="teacher-subject">Викладач англійської мови та розмовних клубів</p>
+            <p class="teacher-credo">«There is always a chance to make things right.»</p>
+          </div>
+        </div>
+
+        <!-- Викладач 5 -->
+        <div class="teacher-card">
+          <div class="teacher-photo-wrap">
+            <img src="https://res2.weblium.site/res/65784c26a16541000fbe2749/65ca21c69d2c1b000ea141b2_optimized_636_c624x934" alt="Юлія Павлуцька" loading="lazy">
+            <span class="teacher-exp-tag">Стаж: 13 років</span>
+          </div>
+          <div class="teacher-card-body">
+            <h4 class="teacher-name">Юлія Павлуцька</h4>
+            <p class="teacher-subject">Викладач англійської та німецької мов</p>
+            <p class="teacher-credo">«I touch the future. I teach. Навчання — це інвестиція у майбутнє.»</p>
+          </div>
+        </div>
+
+        <!-- Викладач 6 -->
+        <div class="teacher-card">
+          <div class="teacher-photo-wrap">
+            <img src="https://res2.weblium.site/res/65784c26a16541000fbe2749/65cf54f1ec461b000e77c7d9_optimized_680_c624x934" alt="Анна Харовська" loading="lazy">
+            <span class="teacher-exp-tag">Стаж: 8 років</span>
+          </div>
+          <div class="teacher-card-body">
+            <h4 class="teacher-name">Анна Харовська</h4>
+            <p class="teacher-subject">Викладач англійської та китайської мов</p>
+            <p class="teacher-credo">«Love what you do and do what you love.»</p>
+          </div>
+        </div>
+
+        <!-- Викладач 7 -->
+        <div class="teacher-card">
+          <div class="teacher-photo-wrap">
+            <img src="https://res2.weblium.site/res/65784c26a16541000fbe2749/65dded541d37b5000e5fdbea_optimized_624_c624x832" alt="Юлія Зозуляк" loading="lazy">
+            <span class="teacher-exp-tag">Стаж: 21 рік</span>
+          </div>
+          <div class="teacher-card-body">
+            <h4 class="teacher-name">Юлія Зозуляк</h4>
+            <p class="teacher-subject">Викладач англійської мови вищої категорії</p>
+            <p class="teacher-credo">«Роби те, у що закоханий, тоді ти зможеш усе.»</p>
+          </div>
+        </div>
+
+        <!-- Викладач 8 -->
+        <div class="teacher-card">
+          <div class="teacher-photo-wrap">
+            <img src="https://res2.weblium.site/res/65784c26a16541000fbe2749/65d4969ab726fc000effbe62_optimized_723_c624x934" alt="Лілія Олійник" loading="lazy">
+            <span class="teacher-exp-tag">Стаж: 2 роки</span>
+          </div>
+          <div class="teacher-card-body">
+            <h4 class="teacher-name">Лілія Олійник</h4>
+            <p class="teacher-subject">Викладач інтерактивної англійської для молоді</p>
+            <p class="teacher-credo">«Сучасний підхід, драйв та позитивні емоції на кожному уроці!»</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ІНТЕРАКТИВНИЙ КАЛЬКУЛЯТОР ВАРТОСТІ ================= -->
+  <section id="calculator" class="calc-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">💰 Прозора вартість</span>
+        <h2 class="section-title">Калькулятор вартості навчання</h2>
+        <p class="section-subtitle">
+          Розрахуйте орієнтовну вартість навчання залежно від віку студента та формату занять. Навчальні матеріали включено у вартість.
+        </p>
+      </div>
+
+      <div class="calc-box">
+        <form id="costCalculatorForm" class="calc-inputs" onsubmit="event.preventDefault()">
+          
+          <div class="calc-group">
+            <label>1. Вікова категорія або ціль навчання:</label>
+            <div class="calc-radio-group">
+              <div class="calc-radio-card">
+                <input type="radio" id="audKids" name="calcAudience" value="kids">
+                <label for="audKids" class="calc-radio-label">Дошкільнята (2–6 р.)</label>
+              </div>
+              <div class="calc-radio-card">
+                <input type="radio" id="audTeens" name="calcAudience" value="teens" checked>
+                <label for="audTeens" class="calc-radio-label">Школярі (1–11 кл.)</label>
+              </div>
+              <div class="calc-radio-card">
+                <input type="radio" id="audNmt" name="calcAudience" value="nmt">
+                <label for="audNmt" class="calc-radio-label">НМТ / IELTS / ЗНО</label>
+              </div>
+              <div class="calc-radio-card">
+                <input type="radio" id="audAdults" name="calcAudience" value="adults">
+                <label for="audAdults" class="calc-radio-label">Дорослі (A1–C1)</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-group">
+            <label>2. Формат занять:</label>
+            <div class="calc-radio-group">
+              <div class="calc-radio-card">
+                <input type="radio" id="fmtGroup" name="calcFormat" value="group" checked>
+                <label for="fmtGroup" class="calc-radio-label">Міні-група (4–8 осіб)</label>
+              </div>
+              <div class="calc-radio-card">
+                <input type="radio" id="fmtIntensive" name="calcFormat" value="intensive">
+                <label for="fmtIntensive" class="calc-radio-label">Інтенсив (3 р./тиждень)</label>
+              </div>
+              <div class="calc-radio-card" style="grid-column: span 2;">
+                <input type="radio" id="fmtIndiv" name="calcFormat" value="indiv">
+                <label for="fmtIndiv" class="calc-radio-label">Індивідуальні заняття (1-на-1)</label>
+              </div>
+            </div>
+          </div>
+
+        </form>
+
+        <div class="calc-result-panel">
+          <div class="calc-result-title">Розрахункова вартість:</div>
+          <div id="calcMonthlyPrice" class="calc-result-price">2 640 грн</div>
+          <div id="calcLessonPrice" class="calc-result-period">від 330 грн / заняття (90 хв)</div>
+
+          <ul id="calcDetailsText" class="calc-features-summary">
+            <li>✓ 8 занять на місяць</li>
+            <li>✓ Тривалість: 90 хв</li>
+            <li>✓ Формат: 4–8 осіб</li>
+            <li>✓ Безкоштовне відпрацювання у суботу</li>
+            <li>✓ Підручники Oxford / Cambridge</li>
+          </ul>
+
+          <button class="btn btn-accent btn-lg" style="width: 100%;" onclick="openModal('Запис за обраним тарифом калькулятора')">
+            Записатися за цим тарифом
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ПЕРЕВАГИ & МЕТОДИКА (WHY US) ================= -->
+  <section class="why-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">✨ Чому Перші Київські</span>
+        <h2 class="section-title">6 ключових переваг нашої школи</h2>
+        <p class="section-subtitle">
+          Ми не просто викладаємо граматику — ми допомагаємо вільно спілкуватися та досягати високих цілей.
+        </p>
+      </div>
+
+      <div class="advantages-grid-6">
+        <div class="advantage-box">
+          <div class="advantage-icon-bubble">🏆</div>
+          <div class="advantage-text-content">
+            <h3>27-річний досвід навчання</h3>
+            <p>За цей час ми відпрацювали власний, найбільш результативний і доступний стиль викладання для будь-якого віку.</p>
+          </div>
+        </div>
+
+        <div class="advantage-box">
+          <div class="advantage-icon-bubble">📜</div>
+          <div class="advantage-text-content">
+            <h3>Сертифіковані викладачі</h3>
+            <p>Наші педагоги мають міжнародні сертифікати Cambridge CELTA, TKT та постійно підвищують кваліфікацію.</p>
+          </div>
+        </div>
+
+        <div class="advantage-box">
+          <div class="advantage-icon-bubble">⏰</div>
+          <div class="advantage-text-content">
+            <h3>Суботні відпрацювання</h3>
+            <p>Пропустили урок через хворобу чи поїздку? Безкоштовно відпрацюйте пропущений матеріал щосуботи в офісі або онлайн!</p>
+          </div>
+        </div>
+
+        <div class="advantage-box">
+          <div class="advantage-icon-bubble">👥</div>
+          <div class="advantage-text-content">
+            <h3>Камерні групи 4–8 осіб</h3>
+            <p>Індивідуальна увага до кожного студента. Усі активні 100% уроку, жодного пасивного слухання.</p>
+          </div>
+        </div>
+
+        <div class="advantage-box">
+          <div class="advantage-icon-bubble">🗣️</div>
+          <div class="advantage-text-content">
+            <h3>Мовні клуби з носіями</h3>
+            <p>Регулярні Speaking Clubs, кіноперегляди та дискусії для зняття мовного бар'єру в дружній невимушеній атмосфері.</p>
+          </div>
+        </div>
+
+        <div class="advantage-box">
+          <div class="advantage-icon-bubble">💻</div>
+          <div class="advantage-text-content">
+            <h3>Особистий кабінет студента</h3>
+            <p>Зручний онлайн-кабінет для перегляду розкладу, домашніх завдань, балансу та контролю успішності.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ПОДАРУНКОВИЙ СЕРТИФІКАТ ================= -->
+  <section class="gift-section">
+    <div class="container">
+      <div class="gift-card">
+        <div class="gift-image-wrap">
+          <img src="https://res2.weblium.site/res/65784c26a16541000fbe2749/65c10ba2189701000f3b860a_optimized_1182_c1182x1098-0x0" alt="Подарунковий сертифікат Перші Київські Курси">
+        </div>
+        <div class="gift-content">
+          <span class="gift-badge">🎁 Ідеальний подарунок</span>
+          <h2 class="gift-title">Знання — що може бути краще!</h2>
+          <p class="gift-desc">
+            Подаруйте рідним або друзям можливість відкрити світ, вивчити омріяну іноземну мову та здобути впевненість у спілкуванні. Сертифікат діє на будь-який курс та індивідуальні заняття.
+          </p>
+          <button class="btn btn-accent btn-lg" onclick="openModal('Замовлення подарункового сертифіката')">
+            Замовити подарунковий сертифікат
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= РЕАЛЬНІ ВІДГУКИ ================= -->
+  <section id="reviews" class="reviews-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">💬 Відгуки</span>
+        <h2 class="section-title">Історії успіху наших студентів та батьків</h2>
+        <p class="section-subtitle">
+          Щирі слова вдячності від тих, хто досяг своєї мовної мети разом із Першими Київськими Курсами.
+        </p>
+      </div>
+
+      <div class="reviews-grid">
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-quote">
+            «Як каже моя донька, що власне італійська дуже надихаюча мова, але я би додала, що багато залежить від викладача. Те, що на Київських курсах є особлива енергетика — це факт, тому що вона створювалася з любов'ю! Пані Ольга — дивовижно світла та енергійна людина. Донька закохалася в мову одразу!»
+          </p>
+          <div class="review-author-row">
+            <div class="review-avatar">ОО</div>
+            <div>
+              <div class="review-author-name">Олена Осадчук</div>
+              <div class="review-author-info">мама студентки відділення італійської мови</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-quote">
+            «Зараз проходжу курс іспанської мови, можу сказати, що це одні з кращих курсів, на яких я була. Подобається те, що невеликі групи і є змога займатися офлайн та онлайн. Дуже подобається підхід нашого викладача Катерини, особливо те, що вона робить великий акцент на розмовні теми!»
+          </p>
+          <div class="review-author-row">
+            <div class="review-avatar">ЮХ</div>
+            <div>
+              <div class="review-author-name">Юлія Хабенюк</div>
+              <div class="review-author-info">студентка базової групи іспанської мови</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-quote">
+            «I really like First Kyiv Courses! After just one month of study, I felt that my English grew up, especially grammar that was pretty weak before. I can totally recommend you to all people who are looking for high-quality English courses in Kamianets!»
+          </p>
+          <div class="review-author-row">
+            <div class="review-avatar">DV</div>
+            <div>
+              <div class="review-author-name">Denys Vovk</div>
+              <div class="review-author-info">студент дорослої групи General English</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-quote">
+            «Взаємно дякуємо всій чудовій команді супер-вожатих! Вже вдруге ми з вами у літньому таборі English Summer Camp і вдруге позитивні емоції переповнюють! Дякуємо за драйв, щирість, любов до дітей та класно спланований відпочинок!»
+          </p>
+          <div class="review-author-row">
+            <div class="review-avatar">ДГ</div>
+            <div>
+              <div class="review-author-name">Діана Гнаб</div>
+              <div class="review-author-info">мама учасниці English Summer Camp</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-quote">
+            «Безмежно вдячна за гарну англійську, дитині завжди було неймовірно цікаво ходити на уроки. Віолетта отримала величезний запас слів та впевнено заговорила на рівні свого віку. Щиро дякую Першим Київським Курсам!»
+          </p>
+          <div class="review-author-row">
+            <div class="review-avatar">КС</div>
+            <div>
+              <div class="review-author-name">Катерина Сергієнко</div>
+              <div class="review-author-info">мама студентки групи «Англійська для дошкільнят»</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-quote">
+            «I consider these Courses to be very useful. We practice all 4 basic skills: listening, reading, writing, and speaking. Good balance between grammar and communicative practice, interesting topics and supportive atmosphere.»
+          </p>
+          <div class="review-author-row">
+            <div class="review-avatar">RK</div>
+            <div>
+              <div class="review-author-name">Roman Kotyk</div>
+              <div class="review-author-info">студент базової групи англійської мови</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ЧАСТІ ЗАПИТАННЯ (FAQ) ================= -->
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">❓ Запитання & Відповіді</span>
+        <h2 class="section-title">Часті запитання (FAQ)</h2>
+        <p class="section-subtitle">
+          Усе, що потрібно знати про організацію навчання, підручники, оплату та відпрацювання занять.
+        </p>
+      </div>
+
+      <div class="faq-list">
+
+        <div class="faq-item active">
+          <div class="faq-question">
+            <span>Як дізнатися свій точний рівень володіння мовою?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Перед початком занять ми проводимо безкоштовне тестування. Ви можете пройти експрес-тест на нашому сайті або завітати на безкоштовну зустріч із методистом. Офлайн-тестування включає письмовий тест та усну співбесіду, що дає змогу підібрати ідеальну за рівнем та віком групу.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Що робити, якщо я пропустив заняття через поїздку чи хворобу?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Ви маєте можливість підключитися онлайн у реальному часі зі своєю групою. Якщо такої змоги не було — щосуботи в наших філіях проводяться безкоштовні відпрацювання! Викладач передасть завдання з пропущеним матеріалом черговому вчителю для індивідуального опрацювання.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>За якими навчальними матеріалами та підручниками проходить навчання?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Ми працюємо виключно з оригінальними підручниками провідних британських та світових видавництв: <strong>Oxford University Press, Cambridge University Press, Pearson Longman, Macmillan та Express Publishing</strong>. Додатково застосовуємо автентичні аудіо, відеоматеріали та інтернет-ресурси.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Як здійснюється оплата за навчання?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Сума до сплати за поточний місяць залежить від кількості занять (8 або 9 за календарем). Сплатити можна через Приват24 (погашення заборгованості за реквізитами), карткою Visa/Mastercard будь-якого банку, через термінали або касу банку до початку першого заняття в місяці.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Що таке особистий кабінет студента ПКК?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Кожен студент ПКК має доступ до особистого кабінету, де можна переглядати розклад занять, одержувати домашні завдання, бачити коментарі викладача та контролювати стан оплат. Логін та пароль надає наш адміністратор після зарахування.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Чи видається офіційний сертифікат після закінчення курсу?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Так! Усі студенти, які успішно склали фінальне тестування за програмою курсу, одержують офіційний сертифікат за шкалою CEFR (Загальноєвропейські компетенції володіння іноземною мовою) із зазначенням досягнутого рівня від A1 до C1.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ЛОКАЦІЇ ТА КОНТАКТИ У КАМ'ЯНЦІ-ПОДІЛЬСЬКОМУ ================= -->
   <section id="contacts" class="contacts-section">
     <div class="container">
-      <div class="contacts-wrapper">
+      <div class="section-header">
+        <span class="section-badge">📍 Наші адреси</span>
+        <h2 class="section-title">Чекаємо вас на заняттях у Кам'янці-Подільському</h2>
+        <p class="section-subtitle">
+          Оберіть зручну для вас локацію, зателефонуйте або залиште заявку — і ми зв'яжемося з вами протягом 15 хвилин.
+        </p>
+      </div>
+
+      <div class="contacts-grid">
         
-        <!-- Ліва колонка: Інформація -->
-        <div class="contacts-info">
-          <span class="contacts-badge">📍 Зв'яжіться з нами</span>
-          <h2 class="contacts-title">Чекаємо вас на заняттях</h2>
-          <p class="contacts-desc">
-            Слідкуйте за нами в соцмережах, долучайтесь до онлайн-уроків або завітайте на очні заняття в Кам'янці-Подільському.
-          </p>
+        <!-- Ліва колонка: Адреси філій -->
+        <div class="branch-cards-list">
           
-       <div class="social-links">
-  <!-- Facebook -->
-  <a href="https://www.facebook.com/1kyivcourses" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
-    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-  </a>
+          <div class="branch-card">
+            <div class="branch-icon">🏢</div>
+            <div class="branch-info">
+              <h3>Філія №1: вул. Симона Петлюри, 16</h3>
+              <p>Головний офіс, дитячі та підліткові групи, розмовні клуби. Зручний доїзд з будь-якого куточка міста.</p>
+              <a href="tel:+380673816438" class="branch-phone-link">
+                📞 (067) 38 164 38
+              </a>
+            </div>
+          </div>
 
-  <!-- Instagram -->
-  <a href="https://www.instagram.com/1kyivcourses" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
-    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-  </a>
+          <div class="branch-card">
+            <div class="branch-icon">🏫</div>
+            <div class="branch-info">
+              <h3>Філія №2: вул. Героїв Маріуполя, 4-м</h3>
+              <p>Сучасні аудиторії, підготовка до НМТ та міжнародних іспитів IELTS/TOEFL, корпоративне навчання.</p>
+              <a href="tel:+380688829988" class="branch-phone-link">
+                📞 (068) 88 299 88
+              </a>
+            </div>
+          </div>
 
-  <!-- Telegram -->
-  <a href="https://t.me/firstkyivcourses" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Telegram">
-    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.022c.242-.213-.054-.333-.373-.121l-6.869 4.326-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.128.832.941z"/></svg>
-  </a>
+          <div class="branch-card">
+            <div class="branch-icon">🚗</div>
+            <div class="branch-info">
+              <h3>Філія №3: вул. Данила Галицького, 3-А</h3>
+              <p>У дворі автомобільної школи ТСОУ: локація для суботніх відпрацювань та спеціальних інтенсивів.</p>
+              <a href="tel:+380673816438" class="branch-phone-link">
+                📞 (067) 38 164 38
+              </a>
+            </div>
+          </div>
 
-  <!-- TikTok -->
-  <a href="https://www.tiktok.com/@1kyivcourses" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="TikTok">
-    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.82.56-1.31 1.56-1.25 2.56.04 1.01.62 1.94 1.52 2.37.89.44 1.97.38 2.82-.13.88-.52 1.41-1.52 1.42-2.54.02-4.32.01-8.64.01-12.96z"/></svg>
-  </a>
-
-  <!-- YouTube -->
-  <a href="https://www.youtube.com/channel/UCN10CmwrGdQaoWlQeruTt5w" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
-    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-  </a>
-</div>
         </div>
 
-        <!-- Права колонка: Картка з контактами -->
-        <div class="contacts-card">
-          <div class="contact-item">
-            <div class="contact-icon">📞</div>
-            <div>
-              <h4>Телефони</h4>
-              <a href="tel:+380673816438">(067) 38 164 38</a>
-              <a href="tel:+380688829988">(068) 88 299 88</a>
-            </div>
-          </div>
+        <!-- Права колонка: Форма швидкої заявки -->
+        <div class="contact-form-card">
+          <h3>Швидкий запис на консультацію</h3>
+          <p>Залиште контактні дані для безкоштовного тестування або підбору зручного розкладу:</p>
 
-          <div class="contact-item">
-            <div class="contact-icon">✉️</div>
-            <div>
-              <h4>Email</h4>
-              <a href="mailto:kursymov.kp@gmail.com">kursymov.kp@gmail.com</a>
-            </div>
-          </div>
+          <form onsubmit="handleFormSubmit(event)">
+            <input type="hidden" name="course" id="formDirectCourse" value="Загальна консультація">
 
-          <div class="contact-item">
-            <div class="contact-icon">📍</div>
-            <div>
-              <h4>Адреси у Кам'янці-Подільському</h4>
-              <p>вул. Симона Петлюри, 16</p>
-              <p>вул. Героїв Маріуполя, 4-м</p>
+            <div class="form-group">
+              <label for="clientNameInput">Ваше ім'я:</label>
+              <input type="text" id="clientNameInput" class="form-control" placeholder="Олександр або Марія" required>
             </div>
-          </div>
 
-          <div class="contact-item">
-            <div class="contact-icon">🕒</div>
-            <div>
-              <h4>Графік роботи</h4>
-              <p>Пн–Пт: 10:00 – 19:00</p>
-              <p class="text-muted">Сб–Нд: Вихідні</p>
+            <div class="form-group">
+              <label for="clientPhoneInput">Номер телефону:</label>
+              <input type="tel" id="clientPhoneInput" class="form-control" placeholder="+38 (067) 000-00-00" required>
             </div>
+
+            <div class="form-group">
+              <label for="clientLanguageSelect">Оберіть мову або ціль:</label>
+              <select id="clientLanguageSelect" class="form-control">
+                <option value="Англійська мова">Англійська мова</option>
+                <option value="Підготовка до НМТ/ЗНО">Підготовка до НМТ / ЗНО</option>
+                <option value="IELTS / TOEFL">IELTS / TOEFL</option>
+                <option value="Польська мова">Польська мова</option>
+                <option value="Німецька мова">Німецька мова</option>
+                <option value="Італійська мова">Італійська мова</option>
+                <option value="Іспанська мова">Іспанська мова</option>
+                <option value="Paddington (2-6 років)">Простір Paddington (2-6 років)</option>
+                <option value="English Summer Camp">English Summer Camp</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              Надіслати заявку 🚀
+            </button>
+          </form>
+
+          <!-- Соціальні мережі -->
+          <div class="social-links-bar">
+            <span style="font-size: 13.5px; font-weight: 600; color: var(--text-muted);">Ми в соцмережах:</span>
+            
+            <a href="https://www.facebook.com/1kyivcourses" target="_blank" rel="noopener noreferrer" class="social-pill-btn" aria-label="Facebook">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+
+            <a href="https://www.instagram.com/1kyivcourses" target="_blank" rel="noopener noreferrer" class="social-pill-btn" aria-label="Instagram">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+
+            <a href="https://t.me/firstkyivcourses" target="_blank" rel="noopener noreferrer" class="social-pill-btn" aria-label="Telegram">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.022c.242-.213-.054-.333-.373-.121l-6.869 4.326-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.128.832.941z"/></svg>
+            </a>
+
+            <a href="https://www.tiktok.com/@1kyivcourses" target="_blank" rel="noopener noreferrer" class="social-pill-btn" aria-label="TikTok">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.82.56-1.31 1.56-1.25 2.56.04 1.01.62 1.94 1.52 2.37.89.44 1.97.38 2.82-.13.88-.52 1.41-1.52 1.42-2.54.02-4.32.01-8.64.01-12.96z"/></svg>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCN10CmwrGdQaoWlQeruTt5w" target="_blank" rel="noopener noreferrer" class="social-pill-btn" aria-label="YouTube">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+
           </div>
         </div>
 
@@ -443,29 +1042,108 @@
     </div>
   </section>
 
-  <!-- ПРЕМІУМ ФУТЕР -->
+  <!-- ================= ФУТЕР САЙТУ ================= -->
   <footer class="main-footer">
     <div class="container">
-      <div class="footer-content">
+      <div class="footer-top-grid">
+        
         <div class="footer-brand">
-          <a href="#" class="footer-logo">Перші Київські Курси <span>| Кам'янець-Подільський</span></a>
-          <p>Академічна підготовка та курси іноземних мов для дітей та дорослих.</p>
+          <div class="logo-texts">
+            <span class="logo-title">Перші Київські Курси</span>
+            <span style="font-size: 13px; color: var(--pkk-gold-brand);">Кам'янець-Подільський</span>
+          </div>
+          <p>
+            Понад 27 років успішного викладання іноземних мов для дітей, підлітків та дорослих. Академічні стандарти, автентичні підручники Oxford & Cambridge та міжнародні сертифікати CEFR.
+          </p>
+          <div style="font-size: 14px; color: #94a3b8;">
+            Email: <a href="mailto:kursymov.kp@gmail.com" style="color: #ffffff; text-decoration: underline;">kursymov.kp@gmail.com</a>
+          </div>
         </div>
 
-        <ul class="footer-nav">
-          <li><a href="#main">Головна</a></li>
-          <li><a href="#about">Про нас</a></li>
-          <li><a href="#courses">Курси</a></li>
-          <li><a href="#pricing">Ціни</a></li>
-       
-        </ul>
+        <div>
+          <h4 class="footer-heading">Навчання</h4>
+          <ul class="footer-links-list">
+            <li><a href="#courses">Дошкільнята & Paddington</a></li>
+            <li><a href="#courses">Школярі (1–11 класи)</a></li>
+            <li><a href="#courses">Підготовка до НМТ / ЗНО</a></li>
+            <li><a href="#courses">IELTS & TOEFL</a></li>
+            <li><a href="#courses">Курси для дорослих</a></li>
+            <li><a href="#special">English Summer Camp</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Інформація</h4>
+          <ul class="footer-links-list">
+            <li><a href="#quiz">Експрес-тест онлайн</a></li>
+            <li><a href="#team">Викладацький склад</a></li>
+            <li><a href="#calculator">Калькулятор цін</a></li>
+            <li><a href="#reviews">Відгуки студентів</a></li>
+            <li><a href="#faq">Часті запитання</a></li>
+            <li><a href="#contacts">Адреси філій</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Контакти у місті</h4>
+          <ul class="footer-links-list" style="color: #94a3b8; font-size: 14px; line-height: 1.7;">
+            <li>📍 вул. Симона Петлюри, 16</li>
+            <li>📍 вул. Героїв Маріуполя, 4-м</li>
+            <li>📍 вул. Данила Галицького, 3-А</li>
+            <li style="margin-top: 10px;">📞 <a href="tel:+380673816438" style="color: #ffffff;">(067) 38 164 38</a></li>
+            <li>📞 <a href="tel:+380688829988" style="color: #ffffff;">(068) 88 299 88</a></li>
+            <li style="margin-top: 8px;">🕒 Пн–Пт: 10:00 – 19:00, Сб: відпрацювання</li>
+          </ul>
+        </div>
+
       </div>
 
       <div class="footer-bottom">
         <p>&copy; 2026 Перші Київські Курси. Всі права захищено.</p>
+        <p>Мережа освітніх закладів з вивчення іноземних мов та підготовки до іспитів</p>
       </div>
     </div>
   </footer>
+
+  <!-- ================= МОДАЛЬНЕ ВІКНО ================= -->
+  <div id="callbackModal" class="modal" aria-hidden="true" role="dialog">
+    <div class="modal-overlay" onclick="closeModal()"></div>
+    <div class="modal-container">
+      <button class="modal-close" onclick="closeModal()" aria-label="Закрити модальне вікно">&times;</button>
+      
+      <h3 id="modalTitle" style="font-size: 22px; font-weight: 800; margin-bottom: 8px;">
+        Записатися на безкоштовне тестування
+      </h3>
+      <p style="color: var(--text-muted); margin-bottom: 22px; font-size: 14.5px;">
+        Залиште ваші дані, і наш методист зателефонує вам протягом 15 хвилин для узгодження зручного часу.
+      </p>
+
+      <form onsubmit="handleFormSubmit(event)">
+        <input type="hidden" id="modalSelectedCourse" value="Загальна консультація">
+
+        <div class="form-group">
+          <label for="modalClientName">Ваше ім'я:</label>
+          <input type="text" id="modalClientName" class="form-control" placeholder="Олександр або Анна" required>
+        </div>
+
+        <div class="form-group">
+          <label for="modalClientPhone">Номер телефону:</label>
+          <input type="tel" id="modalClientPhone" class="form-control" placeholder="+38 (0XX) XXX-XX-XX" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 10px;">
+          Надіслати заявку 🚀
+        </button>
+      </form>
+
+      <div style="margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--border-color); text-align: center; font-size: 13.5px; color: var(--text-muted);">
+        Або зателефонуйте нам напряму: <br>
+        <a href="tel:+380673816438" style="font-weight: 700; color: var(--pkk-blue);">📱 (067) 38 164 38</a> | 
+        <a href="tel:+380688829988" style="font-weight: 700; color: var(--pkk-blue);">📱 (068) 88 299 88</a>
+      </div>
+    </div>
+  </div>
+
   <script src="./src/js/main.js"></script>
 </body>
 </html>

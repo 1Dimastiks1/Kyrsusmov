@@ -1093,7 +1093,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .team-lead-photo {
-  height: 100%;
+  height: 500px;
   min-height: 380px;
   overflow: hidden;
 }

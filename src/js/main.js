@@ -451,8 +451,53 @@ window.handleFormSubmit = function(event) {
   const phone = phoneInput ? phoneInput.value.trim() : "";
   const course = courseInput ? courseInput.value : "Курси";
 
-  alert(`Дякуємо, ${name}! 🎉\n\nВашу заявку на «${course}» успішно прийнято! Менеджер Перших Київських Курсів зателефонує вам за номером ${phone} протягом 15 хвилин.`);
+  const message = `Дякуємо, ${name}! 🎉\n\nВашу заявку на «${course}» успішно прийнято! Менеджер Перших Київських Курсів зателефонує вам за номером ${phone} протягом 15 хвилин.`;
+
+  // Detect device type and show appropriate notification
+  if (isMobileDevice()) {
+    alert(message);
+  } else {
+    showCustomNotify(name, course, phone);
+  }
 
   form.reset();
   closeModal();
 };
+
+// Helper function to detect mobile devices
+function isMobileDevice() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && 
+         window.innerWidth <= 768;
+}
+
+// Helper function to show custom notification for desktop/tablet
+function showCustomNotify(name, course, phone) {
+  if (typeof Notify === 'undefined') {
+    // Fallback to alert if Notify is not available
+    alert(`Дякуємо, ${name}! 🎉\n\nВашу заявку на «${course}» успішно прийнято! Менеджер Перших Київських Курсів зателефонує вам за номером ${phone} протягом 15 хвилин.`);
+    return;
+  }
+
+  // Detect current theme
+  const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+  const isDark = currentTheme === 'dark';
+
+  new Notify({
+    status: 'success',
+    title: 'Заявку успішно прийнято!',
+    text: `Дякуємо, ${name}! Вашу заявку на «${course}» успішно прийнято! Менеджер зателефонує вам за номером ${phone} протягом 15 хвилин.`,
+    effect: 'fade',
+    speed: 300,
+    customClass: isDark ? 'dark-theme-notification' : '',
+    customIcon: '',
+    showIcon: true,
+    showCloseButton: true,
+    autoclose: true,
+    autotimeout: 3000,
+    notificationsGap: null,
+    notificationsPadding: null,
+    type: 'outline',
+    position: 'right top',
+    customWrapper: '',
+  });
+}

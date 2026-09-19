@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Падінгтон | Англомовний простір для малечі 2–6 років | Кам'янець-Подільський</title>
+  <meta name="description" content="Англомовний дитячий простір «Падінгтон» у Кам'янці-Подільському від «Перших Київських Курсів». Група неповного дня 2-6 років, повне занурення в англійську, дитячий фітнес, підготовка до школи, артстудії та безпечне укриття.">
+  <link rel="shortcut icon" href="https://res2.weblium.site/res/65784c26a16541000fbe2749/657f6a28286f8a000e39b70d_optimized" type="image/png">
+
+  <!-- Google Fonts: Nunito (Friendly Rounded for Kids) + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/paddington.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@1.0.6/dist/simple-notify.css">
+</head>
+<body>
+
+  <!-- ================= ТОП БАР ================= -->
+  <div class="pad-top-bar">
+    <div class="pad-container pad-top-inner">
+      <div>
+        <a href="index.html" class="pad-back-link">
+          ← На головний сайт «Перші Київські Курси»
+        </a>
+      </div>
+      <div class="pad-top-info">
+        <span>📍 Кам'янець-Подільський | вул. Героїв Маріуполя, 4-М | вул. Симона Петлюри, 16</span>
+        <span style="opacity: 0.4;">•</span>
+        <a href="tel:+380688829988" class="pad-top-phone">📞 (068) 88 299 88</a>
+        <span style="opacity: 0.4;">•</span>
+        <span>Пн–Пт: 09:00–13:00 (ранкова зміна)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= ХЕДЕР PADDINGTON ================= -->
+  <header class="pad-header">
+    <div class="pad-container pad-header-inner">
+      <a href="#hero" class="pad-logo">
+        <img src="https://instagram.frwn2-1.fna.fbcdn.net/v/t51.2885-19/412157780_1484859109081402_3045774815001246668_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=W6rb5N6aAPoQ7kNvwEGQgnM&_nc_oc=Ado502_FROrvURZcoPq6mB1KU11EyFe-_ZIKWTP-bWpBEEkG5-7dX-x7157DU1HMge4&_nc_zt=24&_nc_ht=instagram.frwn2-1.fna&_nc_ss=7b6a8&oh=00_AQJcOgYBXmYelbYsQsY5O8eEKoAZyqChNFqKMf2lRm99fQ&oe=6AB44B84" alt="Падінгтон" class="pad-logo-img">
+        <div>
+          <div class="pad-logo-text-title">Paddington</div>
+          <div class="pad-logo-text-sub">Англомовний простір для дітей 2–6 років</div>
+        </div>
+      </a>
+
+      <nav aria-label="Навігація Падінгтон">
+        <ul class="pad-nav-list">
+          <li><a href="#hero" class="pad-nav-link">Головна</a></li>
+          <li><a href="#programs" class="pad-nav-link">Напрямки</a></li>
+          <li><a href="#quiz" class="pad-nav-link">Тест батькам 🧸</a></li>
+          <li><a href="#ages" class="pad-nav-link">Вікові групи</a></li>
+          <li><a href="#routine" class="pad-nav-link">Розклад дня</a></li>
+          <li><a href="#safety" class="pad-nav-link">Безпека</a></li>
+          <li><a href="#pricing" class="pad-nav-link">Тарифи</a></li>
+          <li><a href="#gallery" class="pad-nav-link">Галерея</a></li>
+          <li><a href="#contacts" class="pad-nav-link">Контакти</a></li>
+        </ul>
+      </nav>
+
+      <div class="pad-header-actions">
+        <a href="https://www.instagram.com/padington_by_1kyivcourses/" target="_blank" rel="noopener noreferrer" class="pad-btn pad-btn-insta" style="padding: 9px 16px; font-size: 13.5px;" title="Наш Instagram">
+          📸 Instagram
+        </a>
+        <button class="pad-btn pad-btn-gold" style="padding: 9px 18px; font-size: 13.5px;" onclick="openPadModal('Запис на безкоштовне знайомство')">
+          🧸 Пробний день
+        </button>
+        <button class="pad-burger-btn" aria-label="Відкрити меню">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO СЕКЦІЯ ================= -->
+  <section id="hero" class="pad-hero-section">
+    <div class="pad-container">
+      <div class="pad-hero-grid">
+        <div>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;">
+            <span class="pad-badge-chip badge-gold">🧸 Простір щасливого дитинства</span>
+            <span class="pad-badge-chip badge-red">🇬🇧 Англомовне занурення</span>
+            <span class="pad-badge-chip badge-mint">🛡️ Власне укриття</span>
+          </div>
+
+          <h1 class="pad-hero-title">
+            Тут малюки ростуть <span class="pad-highlight">двомовними</span>, допитливими та щасливими!
+          </h1>
+
+          <p class="pad-hero-desc">
+            «Падінгтон» — це перший англомовний розвиваючий простір у Кам'янці-Подільському для дітей від 2 до 6 років від Перших Київських Курсів. М'яка адаптація, авторська програма <em>Paddington's Adventure</em>, повне занурення в мову через гру, творчість, дитячий фітнес та підготовка до школи.
+          </p>
+
+          <div class="pad-hero-actions">
+            <button class="pad-btn pad-btn-gold pad-btn-lg" onclick="openPadModal('Запис на пробний адаптаційний день')">
+              Записатися на пробний день 🧸
+            </button>
+            <a href="#routine" class="pad-btn pad-btn-outline pad-btn-lg">
+              Розклад дня ↓
+            </a>
+          </div>
+
+          <div class="pad-hero-pills-row">
+            <div class="pad-pill-card">
+              <span class="pad-pill-icon">👥</span>
+              <span>До 10 діток у групі</span>
+            </div>
+            <div class="pad-pill-card">
+              <span class="pad-pill-icon">👩‍🏫</span>
+              <span>Вчитель англійської + вихователь</span>
+            </div>
+            <div class="pad-pill-card">
+              <span class="pad-pill-icon">🍎</span>
+              <span>Корисний ланч & English Tea-Time</span>
+            </div>
+            <div class="pad-pill-card">
+              <span class="pad-pill-icon">☀️</span>
+              <span>Закритий ігровий майданчик</span>
+            </div>
+          </div>
+        </div>
+
+          <div class="pad-hero-visual">
+          <div class="pad-hero-main-card">
+            <img src="https://instagram.frwn2-1.fna.fbcdn.net/v/t51.2885-19/412157780_1484859109081402_3045774815001246668_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=W6rb5N6aAPoQ7kNvwEGQgnM&_nc_oc=Ado502_FROrvURZcoPq6mB1KU11EyFe-_ZIKWTP-bWpBEEkG5-7dX-x7157DU1HMge4&_nc_zt=24&_nc_ht=instagram.frwn2-1.fna&_nc_ss=7b6a8&oh=00_AQJcOgYBXmYelbYsQsY5O8eEKoAZyqChNFqKMf2lRm99fQ&oe=6AB44B84" alt="Дітки у просторі Падінгтон">
+         
+          </div>
+
+          <div class="pad-hero-float-tag-top">
+            🇬🇧 Англійська з першого дня! 🐾
+          </div>
+
+          <div class="pad-hero-float-card-bot">
+            <div style="font-size: 32px;">🏰</div>
+            <div>
+              <strong style="font-size: 15px; display: block;">вул. Героїв Маріуполя, 4-М</strong>
+              <span style="font-size: 13px; color: var(--pad-text-muted);">Затишний зелений дворик</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Веселі сліди лапок Падінгтона на фоні -->
+      <div class="pad-paw-trail pad-paw-trail-hero" aria-hidden="true">
+        <span class="pad-paw-item">🐾</span>
+        <span class="pad-paw-item">🐾</span>
+        <span class="pad-paw-item">🐾</span>
+        <span class="pad-paw-item">🐾</span>
+        <span class="pad-paw-item">🐾</span>
+        <span class="pad-paw-item">🐾</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ТЕСТ ДЛЯ БАТЬКІВ ================= -->
+  <section id="quiz" class="pad-quiz-section">
+    <div class="pad-container">
+      <div class="pad-section-header">
+        <span class="pad-badge-chip badge-gold">🧩 Експрес-діагностика</span>
+        <h2 class="pad-section-title">Чи готовий ваш малюк до садочка та англійської?</h2>
+        <p class="pad-section-desc">
+          Дайте відповідь на 4 прості запитання та отримайте персональні рекомендації педагогів щодо легкої адаптації дитини без стресу та сліз.
+        </p>
+      </div>
+
+      <div class="pad-quiz-box">
+        <div id="padQuizActive">
+          <div class="pad-quiz-header">
+            <span id="padQuizCount">Питання 1 з 4</span>
+            <span>🧸 Paddington Parent Check</span>
+          </div>
+
+          <h3 id="padQuizTitle" class="pad-quiz-q-title">Завантаження запитання...</h3>
+
+          <div id="padQuizOptions" class="pad-quiz-options">
+            <!-- Генерується через JS -->
+          </div>
+
+          <div style="display: flex; justify-content: flex-end;">
+            <button id="padQuizNext" class="pad-btn pad-btn-gold" disabled>Далі →</button>
+          </div>
+        </div>
+
+        <div id="padQuizResult" class="pad-quiz-result">
+          <div style="font-size: 48px; margin-bottom: 12px;">🎉</div>
+          <h3 id="padResultTitle" style="font-size: 24px; margin-bottom: 14px;">Результат</h3>
+          <p id="padResultDesc" style="color: var(--pad-text-muted); font-size: 16px; max-width: 620px; margin: 0 auto 26px auto; line-height: 1.65;"></p>
+          <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
+            <button class="pad-btn pad-btn-red pad-btn-lg" onclick="openPadModal('Запис на пробне знайомство після тесту')">
+              Записатися на пробний день 🧸
+            </button>
+            <button id="padQuizRestart" class="pad-btn pad-btn-outline">
+              Пройти знову ↻
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="pad-paw-divider" aria-hidden="true"><span>🐾</span><span>🐾</span><span>🐾</span></div>
+
+  <!-- ================= 6 КЛЮЧОВИХ НАПРЯМКІВ РОЗВИТКУ ================= -->
+  <section id="programs" class="pad-programs-section">
+    <div class="pad-container">
+      <div class="pad-section-header">
+        <span class="pad-badge-chip badge-blue">🌟 Всебічний розвиток</span>
+        <h2 class="pad-section-title">6 ключових напрямків простору «Падінгтон»</h2>
+        <p class="pad-section-desc">
+          Ми поєднали найкращі методики раннього розвитку дитини, білінгвальну освіту та пізнавальні студії.
+        </p>
+      </div>
+
+      <div class="pad-programs-grid">
+
+        <!-- Напрямок 1 -->
+        <div class="pad-program-card">
+          <div class="pad-card-media">
+            <img src="https://res2.weblium.site/res/649aa7a300f285000ff48c3c/64d60442e75c9e00105b66fa_optimized_1248_c1248x832-0x0" alt="Англійська мова зануренням">
+            <span class="pad-card-badge">🇬🇧 Bilingual Kids</span>
+          </div>
+          <div class="pad-card-body">
+            <h3 class="pad-card-title">Англійська мова та мовний супровід</h3>
+            <p class="pad-card-desc">
+              У «Падінгтоні» виховують двомовних малюків! Дошкільнята ще не вміють читати, але розуміють викладача завдяки наочним образам, пісням, мові жестів та повному зануренню в англомовне середовище.
+            </p>
+            <ul class="pad-card-points">
+              <li>🐾 Вивчення слів через живе спілкування та гру</li>
+              <li>🐾 Британська вимова та пісні Super Simple Songs</li>
+              <li>🐾 Діти починають думати англійською природно</li>
+            </ul>
+            <button class="pad-btn pad-btn-gold" onclick="openPadModal('Курс: Англійська мова у Падінгтоні')">Дізнатися більше</button>
+          </div>
+        </div>
+
+        <!-- Напрямок 2 -->
+        <div class="pad-program-card">
+          <div class="pad-card-media">
+            <img src="https://res2.weblium.site/res/649aa7a300f285000ff48c3c/64d60477b3473a000ff919fd_optimized_1248_c1248x831-0x0" alt="Пізнавально-розвиваюче середовище">
+            <span class="pad-card-badge">🧩 Сенсорика & STEM</span>
+          </div>
+          <div class="pad-card-body">
+            <h3 class="pad-card-title">Пізнавально-розвивальне середовище</h3>
+            <p class="pad-card-desc">
+              Особливий формат організації взаємодії: малюки досліджують світ, експериментують, будують моделі, вивчають кольори, геометричні фігури та розвивають просторову уяву.
+            </p>
+            <ul class="pad-card-points">
+              <li>🐾 Сенсорні столики та тактильні матеріали</li>
+              <li>🐾 Логічні лабіринти, головоломки та конструювання</li>
+              <li>🐾 Дослідження природи та навколишнього світу</li>
+            </ul>
+            <button class="pad-btn pad-btn-outline" onclick="openPadModal('Напрямок: Пізнавальне середовище')">Дізнатися більше</button>
+          </div>
+        </div>
+
+        <!-- Напрямок 3 -->
+        <div class="pad-program-card">
+          <div class="pad-card-media">
+            <img src="https://res2.weblium.site/res/649aa7a300f285000ff48c3c/64d602c454d231000f51d7fa_optimized_930_c930x1395-0x0" alt="Підготовка до школи">
+            <span class="pad-card-badge">🎓 Pre-School 4–6 років</span>
+          </div>
+          <div class="pad-card-body">
+            <h3 class="pad-card-title">Підготовка до Нової Української Школи</h3>
+            <p class="pad-card-desc">
+              Комплексна підготовка майбутніх першокласників: математичні навички, аналітичне мислення, раннє читання за системою Phonics, підготовка руки до письма та впевненість у собі.
+            </p>
+            <ul class="pad-card-points">
+              <li>🐾 Лічба, порівняння, задачі на кмітливість</li>
+              <li>🐾 Читання по складах та звуковий аналіз слів</li>
+              <li>🐾 Розвиток концентрації, уваги та посидючості</li>
+            </ul>
+            <button class="pad-btn pad-btn-gold" onclick="openPadModal('Курс: Підготовка до школи у Падінгтоні')">Дізнатися більше</button>
+          </div>
+        </div>
+
+        <!-- Напрямок 4 -->
+        <div class="pad-program-card">
+          <div class="pad-card-media">
+            <img src="https://res2.weblium.site/res/649aa7a300f285000ff48c3c/64d0bb7c0c3f1400101cbc49_optimized_1009_c752x752-110x33" alt="Артстудії та майстер-класи">
+            <span class="pad-card-badge">🎨 Art & Creativity</span>
+          </div>
+          <div class="pad-card-body">
+            <h3 class="pad-card-title">Артстудії та творчі майстер-класи</h3>
+            <p class="pad-card-desc">
+              Заняття з творчості пробуджують фантазію дитини, формують почуття прекрасного та впевненість. Робота з глиною, пальчиковими фарбами, воском, природними матеріалами.
+            </p>
+            <ul class="pad-card-points">
+              <li>🐾 Нетрадиційні техніки малювання та ліплення</li>
+              <li>🐾 Розвиток дрібної моторики рук та координації</li>
+              <li>🐾 Створення власних шедеврів для домашньої виставки</li>
+            </ul>
+            <button class="pad-btn pad-btn-outline" onclick="openPadModal('Артстудія Падінгтон')">Дізнатися більше</button>
+          </div>
+        </div>
+
+        <!-- Напрямок 5 -->
+        <div class="pad-program-card">
+          <div class="pad-card-media">
+            <img src="https://res2.weblium.site/res/649aa7a300f285000ff48c3c/64d605d854d231000f51dc60_optimized_930_c930x930-0x0" alt="Дитячий фітнес">
+            <span class="pad-card-badge">🏃‍♂️ Active Kids</span>
+          </div>
+          <div class="pad-card-body">
+            <h3 class="pad-card-title">Дитячий фітнес та зміцнення постави</h3>
+            <p class="pad-card-desc">
+              Продумана дитяча фізкультура: зміцнюючі та оздоровчі рухові активності, формування правильної постави, рівної ходи та зміцнення імунітету в ігровій динамічній формі.
+            </p>
+            <ul class="pad-card-points">
+              <li>🐾 Вправи для профілактики плоскостопості та сколіозу</li>
+              <li>🐾 Веселі естафети, рухливі ігри англійською</li>
+              <li>🐾 Вправи на баланс, гнучкість та координацію</li>
+            </ul>
+            <button class="pad-btn pad-btn-gold" onclick="openPadModal('Дитячий фітнес')">Дізнатися більше</button>
+          </div>
+        </div>
+
+        <!-- Напрямок 6 -->
+        <div class="pad-program-card">
+          <div class="pad-card-media">
+            <img src="https://res2.weblium.site/res/65784c26a16541000fbe2749/658589c5515fdd000fabecf3_optimized_1396_c1396x930-0x0" alt="Логоритміка та музика">
+            <span class="pad-card-badge">🎵 Speech & Music</span>
+          </div>
+          <div class="pad-card-body">
+            <h3 class="pad-card-title">Логоритміка та розвиток мовлення</h3>
+            <p class="pad-card-desc">
+              Система вправ під музику та вірші, яка допомагає «поставити» правильну, чітку та красиву вимову. Логоритміка тренує артикуляційний апарат, слух, ритм та пам'ять.
+            </p>
+            <ul class="pad-card-points">
+              <li>🐾 Дихальна гімнастика та артикуляційні казки</li>
+              <li>🐾 Розвиток фонематичного слуху українською та англійською</li>
+              <li>🐾 Подолання мовленнєвих бар'єрів і сором'язливості</li>
+            </ul>
+            <button class="pad-btn pad-btn-outline" onclick="openPadModal('Логоритміка у Падінгтоні')">Дізнатися більше</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="pad-paw-divider" aria-hidden="true"><span>🐾</span><span>🐾</span><span>🐾</span></div>
+
+  <!-- ================= ВІКОВІ ГРУПИ ================= -->
+  <section id="ages" class="pad-ages-section">
+    <div class="pad-container">
+      <div class="pad-section-header">
+        <span class="pad-badge-chip badge-gold">👶 Вікові категорії</span>
+        <h2 class="pad-section-title">Групи формуються строго за віком</h2>
+        <p class="pad-section-desc">
+          Програма та навантаження адаптовані під психофізіологічні особливості кожного етапу дитинства.
+        </p>
+      </div>
+
+      <div class="pad-ages-grid">
+        
+        <!-- Група 1 -->
+        <div class="pad-age-card">
+          <div class="pad-age-icon">🐣</div>
+          <span class="pad-age-range">2 – 3 роки</span>
+          <h3 class="pad-age-title">Малюки «Little Cubs»</h3>
+          <p class="pad-age-desc">
+            Перший крок у світ поза домівкою. М'яка адаптація, сенсорний розвиток, мова жестів, перші слова англійською через пісеньки, розвиток моторики та навичок самообслуговування.
+          </p>
+          <ul class="pad-card-points" style="margin-bottom: 24px;">
+            <li>🐾 До 6–8 діток у групі</li>
+            <li>🐾 Постійна турбота вихователя</li>
+            <li>🐾 Адаптація без сліз</li>
+          </ul>
+          <button class="pad-btn pad-btn-outline" onclick="openPadModal('Група: Малюки (2-3 роки)')">Записатися в групу</button>
+        </div>
+
+        <!-- Група 2 -->
+        <div class="pad-age-card highlighted">
+          <div class="pad-age-icon">🚀</div>
+          <span class="pad-age-range" style="color: var(--pad-blue);">3 – 4 роки</span>
+          <h3 class="pad-age-title">Середня група «Explorers»</h3>
+          <p class="pad-age-desc">
+            Вік бурхливого розвитку мовлення та «чомучок». Активні сюжетні ігри англійською, вивчення цифр, геометричних фігур, досліди, конструювання, дитячий фітнес та соціалізація.
+          </p>
+          <ul class="pad-card-points" style="margin-bottom: 24px;">
+            <li>🐾 До 8–10 дітей</li>
+            <li>🐾 Багатий словниковий запас</li>
+            <li>🐾 Спільні ігри та дружба</li>
+          </ul>
+          <button class="pad-btn pad-btn-gold" onclick="openPadModal('Група: Explorers (3-4 роки)')">Записатися в групу</button>
+        </div>
+
+        <!-- Група 3 -->
+        <div class="pad-age-card">
+          <div class="pad-age-icon">🎓</div>
+          <span class="pad-age-range">4 – 6 років</span>
+          <h3 class="pad-age-title">Старша група «Pre-School Stars»</h3>
+          <p class="pad-age-desc">
+            Комплексна підготовка до школи. Читання за методикою Phonics, рахунок, логіка, письмо, розмовна англійська, самостійність та високий емоційний інтелект для легкого старту в 1 класі.
+          </p>
+          <ul class="pad-card-points" style="margin-bottom: 24px;">
+            <li>🐾 Підготовка до школи НУШ</li>
+            <li>🐾 Читання англійською та українською</li>
+            <li>🐾 Аналітичне мислення</li>
+          </ul>
+          <button class="pad-btn pad-btn-outline" onclick="openPadModal('Група: Pre-School (4-6 років)')">Записатися в групу</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= РОЗКЛАД ДНЯ (TIMELINE) ================= -->
+  <section id="routine" class="pad-timeline-section">
+    <div class="pad-container">
+      <div class="pad-section-header">
+        <span class="pad-badge-chip badge-mint">⏰ Розпорядок дня</span>
+        <h2 class="pad-section-title">Один день у просторі «Падінгтон»</h2>
+        <p class="pad-section-desc">
+          Ранкова зміна з 09:00 до 13:00 насичена корисними заняттями, зміною активностей та радісними емоціями.
+        </p>
+      </div>
+
+      <div class="pad-timeline-wrapper">
+        
+        <div class="pad-timeline-item">
+          <div class="pad-timeline-dot">☀️</div>
+          <div class="pad-timeline-card">
+            <div class="pad-timeline-time">09:00 – 09:30</div>
+            <h3 class="pad-timeline-title">Warm Welcome & Morning Circle</h3>
+            <p class="pad-timeline-desc">Зустріч малюків, привітання піснею «Hello Song» англійською, визначення настрою дня та легка зарядка-розминка.</p>
+          </div>
+        </div>
+
+        <div class="pad-timeline-item">
+          <div class="pad-timeline-dot">🇬🇧</div>
+          <div class="pad-timeline-card">
+            <div class="pad-timeline-time">09:30 – 10:15</div>
+            <h3 class="pad-timeline-title">English Immersion & Sensory Play</h3>
+            <p class="pad-timeline-desc">Занурення в мовне середовище: інтерактивні ігри з картками, наочними фігурками, пальчикові ігри та веселі діалоги.</p>
+          </div>
+        </div>
+
+        <div class="pad-timeline-item">
+          <div class="pad-timeline-dot">🍎</div>
+          <div class="pad-timeline-card">
+            <div class="pad-timeline-time">10:15 – 10:45</div>
+            <h3 class="pad-timeline-title">Healthy Snack & English Tea-Time</h3>
+            <p class="pad-timeline-desc">Чаювання, корисні фрукти, печиво, розвиток культури поведінки за столом та навичок самообслуговування.</p>
+          </div>
+        </div>
+
+        <div class="pad-timeline-item">
+          <div class="pad-timeline-dot">🏃‍♂️</div>
+          <div class="pad-timeline-card">
+            <div class="pad-timeline-time">10:45 – 11:30</div>
+            <h3 class="pad-timeline-title">Kids Fitness & Logorhythmics</h3>
+            <p class="pad-timeline-desc">Дитяча оздоровча гімнастика, рухливі естафети, вправи для постави та музично-ритмічні логопедичні ігри.</p>
+          </div>
+        </div>
+
+        <div class="pad-timeline-item">
+          <div class="pad-timeline-dot">🎨</div>
+          <div class="pad-timeline-card">
+            <div class="pad-timeline-time">11:30 – 12:30</div>
+            <h3 class="pad-timeline-title">Art Workshop / Підготовка до школи</h3>
+            <p class="pad-timeline-desc">Творча майстерня (малювання, ліплення, аплікація) або інтелектуальний блок (математика, логіка, читання за віком).</p>
+          </div>
+        </div>
+
+        <div class="pad-timeline-item">
+          <div class="pad-timeline-dot">🌳</div>
+          <div class="pad-timeline-card">
+            <div class="pad-timeline-time">12:30 – 13:00</div>
+            <h3 class="pad-timeline-title">Outdoor Walk & Happy Goodbye</h3>
+            <p class="pad-timeline-desc">Прогулянка на закритому безпечному дитячому майданчику, підсумки дня та щаслива зустріч із батьками.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= БЕЗПЕКА ТА ТУРБОТА ================= -->
+  <section id="safety" class="pad-safety-section">
+    <div class="pad-container">
+      <div class="pad-section-header">
+        <span class="pad-badge-chip badge-red">🛡️ Спокій батьків</span>
+        <h2 class="pad-section-title">Безпека та комфорт понад усе</h2>
+        <p class="pad-section-desc">
+          Ми створили середовище, у якому ваша дитина перебуває під постійним наглядом і в повній безпеці.
+        </p>
+      </div>
+
+      <div class="pad-safety-grid">
+        
+        <div class="pad-safety-card">
+          <div class="pad-safety-icon">🛡️</div>
+          <h3>Власне укриття</h3>
+          <p>Облаштоване сертифіковане укриття розташоване безпосередньо під першим поверхом. Є сидячі місця, питна вода, іграшки та снеки.</p>
+        </div>
+
+        <div class="pad-safety-card">
+          <div class="pad-safety-icon">🌳</div>
+          <h3>Закритий майданчик</h3>
+          <p>Щоденні прогулянки на безпечному закритому майданчику у зеленому дворі без сторонніх осіб та транспорту.</p>
+        </div>
+
+        <div class="pad-safety-card">
+          <div class="pad-safety-icon">👩‍🏫</div>
+          <h3>Два педагоги на групу</h3>
+          <p>Одночасно працюють викладач англійської мови та вихователь-дошкільник. Кожен малюк отримує 100% уваги.</p>
+        </div>
+
+        <div class="pad-safety-card">
+          <div class="pad-safety-icon">✨</div>
+          <h3>Гігієна та чистота</h3>
+          <p>Щоденне кварцування приміщень, дезінфекція іграшок, провітрювання та екологічні дитячі меблі.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ТАРИФИ ТА АБОНЕМЕНТИ ================= -->
+  <section id="pricing" class="pad-pricing-section">
+    <div class="pad-container">
+      <div class="pad-section-header">
+        <span class="pad-badge-chip badge-gold">💳 Зручна оплата</span>
+        <h2 class="pad-section-title">Вартість відвідування простору «Падінгтон»</h2>
+        <p class="pad-section-desc">
+          Прозорі тарифи без прихованих доплат. У вартість включено всі навчальні матеріали, арт-засоби та ланч.
+        </p>
+      </div>
+
+      <div class="pad-pricing-grid">
+
+        <!-- Тариф 1 -->
+        <div class="pad-price-card">
+          <h3 class="pad-price-name">Разовий день</h3>
+          <div class="pad-price-val">680 <span>грн</span></div>
+          <div class="pad-price-period">за 1 день перебування (4 години)</div>
+
+          <ul class="pad-price-features">
+            <li>🐾 Перебування з 09:00 до 13:00</li>
+            <li>🐾 Всі розвиваючі блоки та англійська</li>
+            <li>🐾 Здоровий ланч & чаювання</li>
+            <li>🐾 Прогулянка на закритому майданчику</li>
+          </ul>
+
+          <button class="pad-btn pad-btn-outline" onclick="openPadModal('Тариф: Разовий день (680 грн)')">Обрати тариф</button>
+        </div>
+
+        <!-- Тариф 2 (Популярний) -->
+        <div class="pad-price-card featured">
+          <span class="pad-popular-tag">Найкращий вибір ⭐</span>
+          <h3 class="pad-price-name">Абонемент «10 днів»</h3>
+          <div class="pad-price-val">6 400 <span>грн</span></div>
+          <div class="pad-price-period">640 грн / день (економія 400 грн)</div>
+
+          <ul class="pad-price-features">
+            <li>🐾 Гнучкий графік: 2–3 рази на тиждень</li>
+            <li>🐾 Збереження місця в групі</li>
+            <li>🐾 Всі матеріали та ланчі включено</li>
+            <li>🐾 Щоденний фотозвіт батькам у Viber/Telegram</li>
+            <li>🐾 Психологічний супровід адаптації</li>
+          </ul>
+
+          <button class="pad-btn pad-btn-gold" onclick="openPadModal('Абонемент на 10 днів (6400 грн)')">Замовити абонемент</button>
+        </div>
+
+        <!-- Тариф 3 -->
+        <div class="pad-price-card">
+          <h3 class="pad-price-name">Абонемент «Місяць»</h3>
+          <div class="pad-price-val">11 800 <span>грн</span></div>
+          <div class="pad-price-period">20 днів (590 грн/день — максимальна вигода)</div>
+
+          <ul class="pad-price-features">
+            <li>🐾 Повний місяць щоденного розвитку</li>
+            <li>🐾 Найвища динаміка засвоєння англійської</li>
+            <li>🐾 Повна підготовка до школи</li>
+            <li>🐾 Безкоштовний суботній speaking клуб</li>
+          </ul>
+
+          <button class="pad-btn pad-btn-outline" onclick="openPadModal('Абонемент на місяць (11800 грн)')">Обрати тариф</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ФОТОГАЛЕРЕЯ ================= -->
+  <section id="gallery" class="pad-gallery-section">
+    <div class="pad-container">
+      <div class="pad-section-header">
+        <span class="pad-badge-chip badge-gold">📸 Наші будні</span>
+        <h2 class="pad-section-title">Щасливі моменти у «Падінгтоні»</h2>
+        <p class="pad-section-desc">
+          Подивіться, як проходять наші заняття, творчі майстер-класи та веселі ігри. Більше фото та відео — у нашому Instagram!
+        </p>
+      </div>
+
+      <div class="pad-gallery-grid">
+        <div class="pad-gallery-item">
+          <img src="https://res2.weblium.site/res/649aa7a300f285000ff48c3c/64d60442e75c9e00105b66fa_optimized_998_c998x666-0x0" alt="Ігри у Падінгтоні" loading="lazy">
+        </div>
+        <div class="pad-gallery-item">
+          <img src="https://res2.weblium.site/res/649aa7a300f285000ff48c3c/64d60477b3473a000ff919fd_optimized_998_c998x664-0x0" alt="Творчість дітей" loading="lazy">
+        </div>
+        <div class="pad-gallery-item">
+          <img src="https://res2.weblium.site/res/649aa7a300f285000ff48c3c/64d602c454d231000f51d7fa_optimized_930_c930x1395-0x0" alt="Заняття за столиками" loading="lazy">
+        </div>
+        <div class="pad-gallery-item">
+          <img src="https://res2.weblium.site/res/649aa7a300f285000ff48c3c/64d605d854d231000f51dc60_optimized_930_c930x930-0x0" alt="Прогулянка на майданчику" loading="lazy">
+        </div>
+        <div class="pad-gallery-item">
+          <img src="https://res2.weblium.site/res/65784c26a16541000fbe2749/658589c5515fdd000fabecf3_optimized_1248_c1248x832-0x0" alt="Англійська мова для малят" loading="lazy">
+        </div>
+        <div class="pad-gallery-item">
+          <img src="https://res2.weblium.site/res/649aa7a300f285000ff48c3c/64d0bb7c0c3f1400101cbc49_optimized_1009_c752x752-110x33" alt="Артстудія" loading="lazy">
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 36px;">
+        <a href="https://www.instagram.com/padington_by_1kyivcourses/" target="_blank" rel="noopener noreferrer" class="pad-btn pad-btn-gold pad-btn-lg">
+          Переглянути Instagram @padington_by_1kyivcourses 📲
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ВІДГУКИ БАТЬКІВ ================= -->
+  <section id="reviews" class="pad-reviews-section">
+    <div class="pad-container">
+      <div class="pad-section-header">
+        <span class="pad-badge-chip badge-gold">💬 Теплі слова</span>
+        <h2 class="pad-section-title">Що говорять батьки про «Падінгтон»</h2>
+        <p class="pad-section-desc">
+          Думки мам і тат, чиї діти вже відвідують наш англомовний простір.
+        </p>
+      </div>
+
+      <div class="pad-reviews-grid">
+
+        <div class="pad-review-card">
+          <div class="pad-review-stars">★★★★★</div>
+          <p class="pad-review-text">
+            «Безмежно вдячна вихователям за турботу та гарну англійську! Віолетта біжить сюди щоранку з радістю. Вдома постійно наспівує пісеньки англійською та рахує іграшки. Дуже затишний простір і прекрасна атмосфера!»
+          </p>
+          <div class="pad-review-author-box">
+            <div class="pad-review-avatar">КС</div>
+            <div>
+              <strong style="display:block; font-size: 15px;">Катерина Сергієнко</strong>
+              <span style="font-size: 13px; color: var(--pad-text-muted);">мама Віолетти (3.5 роки)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pad-review-card">
+          <div class="pad-review-stars">★★★★★</div>
+          <p class="pad-review-text">
+            «Ми дуже переживали за адаптацію, бо син важко залишався без мене. Але в Падінгтоні все пройшло на диво м'яко! Вихователі знайшли підхід з перших хвилин. Тепер у нас купа нових друзів і чудовий режим дня!»
+          </p>
+          <div class="pad-review-author-box">
+            <div class="pad-review-avatar">МД</div>
+            <div>
+              <strong style="display:block; font-size: 15px;">Марина Дорошенко</strong>
+              <span style="font-size: 13px; color: var(--pad-text-muted);">мама Тимурчика (2.5 роки)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pad-review-card">
+          <div class="pad-review-stars">★★★★★</div>
+          <p class="pad-review-text">
+            «Для нас величезний плюс — наявність безпечного укриття прямо під приміщенням та закритий чистий дворик. Діти постійно зайняті чимось цікавим: фітнес, малювання, досліди. Дуже рекомендую всім батькам Кам'янця!»
+          </p>
+          <div class="pad-review-author-box">
+            <div class="pad-review-avatar">ОК</div>
+            <div>
+              <strong style="display:block; font-size: 15px;">Оксана Ковальчук</strong>
+              <span style="font-size: 13px; color: var(--pad-text-muted);">мама Даринки (4 роки)</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="pad-faq-section">
+    <div class="pad-container">
+      <div class="pad-section-header">
+        <span class="pad-badge-chip badge-gold">❓ Питання батьків</span>
+        <h2 class="pad-section-title">Часті запитання про простір</h2>
+      </div>
+
+      <div class="pad-faq-list">
+        
+        <div class="pad-faq-item active">
+          <div class="pad-faq-q">
+            <span>Як проходить перший пробний день і адаптація?</span>
+            <span class="pad-faq-icon">+</span>
+          </div>
+          <div class="pad-faq-a">
+            Ми знайомимося поступово! У перший день мама або тато можуть побути поруч із малюком перші 30–60 хвилин, щоб дитина відчула безпеку. Вихователі м'яко залучають до гри, знайомлять з іграшками та іншими дітками.
+          </div>
+        </div>
+
+        <div class="pad-faq-item">
+          <div class="pad-faq-q">
+            <span>Що потрібно брати із собою до «Падінгтона»?</span>
+            <span class="pad-faq-icon">+</span>
+          </div>
+          <div class="pad-faq-a">
+            Змінне зручне взуття (тапочки або сандалики), змінний комплект одягу за сезоном та особисту пляшечку для водички. Всі навчальні посібники, фарби, пластилін та перекуси ми надаємо!
+          </div>
+        </div>
+
+        <div class="pad-faq-item">
+          <div class="pad-faq-q">
+            <span>Що робити під час сигналу повітряної тривоги?</span>
+            <span class="pad-faq-icon">+</span>
+          </div>
+          <div class="pad-faq-a">
+            Безпека дітей — наш головний пріоритет. Наше укриття розташоване безпосередньо під першим поверхом будівлі. Педагоги організовано спускають малюків, де є зручні місця, світло, запаси питної води, ігри та розвиваючі матеріали.
+          </div>
+        </div>
+
+        <div class="pad-faq-item">
+          <div class="pad-faq-q">
+            <span>Чи є заняття у вихідні дні?</span>
+            <span class="pad-faq-icon">+</span>
+          </div>
+          <div class="pad-faq-a">
+            Так! Щосуботи у нас працює суботній клуб вихідного дня (Saturday English Club & Art Lab), де малюки можуть провести час весело та з користю.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= КОНТАКТИ ТА ФОРМА ЗАПИСУ ================= -->
+  <section id="contacts" class="pad-contact-section">
+    <div class="pad-container">
+      <div class="pad-contact-grid">
+        
+        <div class="pad-contact-info-card">
+          <span class="pad-badge-chip badge-gold">📍 Чекаємо в гості</span>
+          <h2 style="font-size: 28px; margin-bottom: 16px;">Завітайте на екскурсію до «Падінгтона»</h2>
+          <p style="color: var(--pad-text-muted); margin-bottom: 28px;">
+            Покажемо наш затишний простір, познайомимо з педагогами та відповімо на всі ваші запитання за філіжанкою чаю.
+          </p>
+
+          <div class="pad-contact-item">
+            <div class="pad-contact-icon">📍</div>
+            <div>
+              <strong>Адреса у Кам'янці-Подільському:</strong>
+              <p style="color: var(--pad-text-muted); margin: 4px 0 0 0;">вул. Данила Галицького, 3-А (у дворі автошколи ТСОУ)</p>
+            </div>
+          </div>
+
+          <div class="pad-contact-item">
+            <div class="pad-contact-icon">📞</div>
+            <div>
+              <strong>Контактні телефони:</strong>
+              <p style="margin: 4px 0 0 0;">
+                <a href="tel:+380688829988" style="color: var(--pad-blue); font-weight: 700; text-decoration: none;">(068) 88 299 88</a> • 
+                <a href="tel:+380673816438" style="color: var(--pad-blue); font-weight: 700; text-decoration: none;">(067) 38 164 38</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="pad-contact-item">
+            <div class="pad-contact-icon">🕒</div>
+            <div>
+              <strong>Графік занять:</strong>
+              <p style="color: var(--pad-text-muted); margin: 4px 0 0 0;">Понеділок – П'ятниця: 09:00 – 13:00</p>
+            </div>
+          </div>
+
+          <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--pad-border);">
+            <a href="https://www.instagram.com/padington_by_1kyivcourses/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 700; color: var(--pad-red); text-decoration: none;">
+              <span>📸 Стежте за нами в Instagram: @padington_by_1kyivcourses →</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="pad-form-card">
+          <h3 style="font-size: 24px; font-weight: 800; margin-bottom: 8px;">Записатися на пробний день 🧸</h3>
+          <p style="color: var(--pad-text-muted); font-size: 14.5px; margin-bottom: 24px;">
+            Заповніть форму, і наш адміністратор зателефонує вам для узгодження зручного часу знайомства:
+          </p>
+
+          <form onsubmit="handlePadFormSubmit(event)">
+            <input type="hidden" name="program" value="Запис на пробний день у Падінгтон">
+
+            <div class="pad-form-group">
+              <label for="padParentName">Ваше ім'я (мами або тата):</label>
+              <input type="text" id="padParentName" name="parentName" class="pad-form-control" placeholder="Олена чи Михайло" required>
+            </div>
+
+            <div class="pad-form-group">
+              <label for="padPhone">Номер телефону:</label>
+              <input type="tel" id="padPhone" name="phone" class="pad-form-control" placeholder="+38 (068) 000-00-00" required>
+            </div>
+
+            <div class="pad-form-group">
+              <label for="padChildAge">Вік дитини:</label>
+              <select id="padChildAge" name="childAge" class="pad-form-control">
+                <option value="2 – 3 роки">2 – 3 роки (група Little Cubs)</option>
+                <option value="3 – 4 роки">3 – 4 роки (група Explorers)</option>
+                <option value="4 – 6 років">4 – 6 років (підготовка до школи)</option>
+              </select>
+            </div>
+
+            <button type="submit" class="pad-btn pad-btn-gold pad-btn-lg" style="width: 100%; margin-top: 10px;">
+              Надіслати заявку 🚀
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ФУТЕР ================= -->
+  <footer class="pad-footer">
+    <div class="pad-container">
+      <div class="pad-footer-grid">
+        
+        <div class="pad-footer-brand">
+          <h3>Paddington 🧸</h3>
+          <p>
+            Англомовний розвиваючий простір щасливого дитинства у Кам'янці-Подільському. Проєкт мережі «Перші Київські Курси».
+          </p>
+        </div>
+
+        <div class="pad-footer-col">
+          <h4>Простір</h4>
+          <ul class="pad-footer-links">
+            <li><a href="#about">Про простір</a></li>
+            <li><a href="#programs">Напрямки розвитку</a></li>
+            <li><a href="#routine">Розклад дня</a></li>
+            <li><a href="#ages">Вікові групи</a></li>
+          </ul>
+        </div>
+
+        <div class="pad-footer-col">
+          <h4>Батькам</h4>
+          <ul class="pad-footer-links">
+            <li><a href="#quiz">Тест готовності</a></li>
+            <li><a href="#safety">Безпека та укриття</a></li>
+            <li><a href="#pricing">Тарифи</a></li>
+            <li><a href="#reviews">Відгуки</a></li>
+          </ul>
+        </div>
+
+        <div class="pad-footer-col">
+          <h4>Контакти</h4>
+          <ul class="pad-footer-links" style="font-size: 13.5px; line-height: 1.8;">
+            <li>📍 вул. Данила Галицького, 3-А</li>
+            <li>📞 <a href="tel:+380688829988">(068) 88 299 88</a></li>
+            <li>📞 <a href="tel:+380673816438">(067) 38 164 38</a></li>
+            <li>📸 <a href="https://www.instagram.com/padington_by_1kyivcourses/" target="_blank">@padington_by_1kyivcourses</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pad-footer-bottom">
+        <p>&copy; 2026 Англомовний дитячий простір «Падінгтон». Всі права захищено 🧸</p>
+        <p><a href="index.html" class="pad-footer-parent-link">← Перейти на «Перші Київські Курси»</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= МОДАЛЬНЕ ВІКНО ================= -->
+  <div id="padModal" class="modal" aria-hidden="true" role="dialog">
+    <div class="modal-overlay" onclick="closePadModal()"></div>
+    <div class="modal-container">
+      <button class="modal-close" onclick="closePadModal()" aria-label="Закрити">&times;</button>
+      
+      <h3 id="padModalTitle" style="font-size: 22px; font-weight: 800; margin-bottom: 8px;">
+        Запис на пробний день у «Падінгтон» 🧸
+      </h3>
+      <p style="color: var(--pad-text-muted); margin-bottom: 22px; font-size: 14.5px;">
+        Залиште ваші контакти, і ми узгодимо зручний день для першого знайомства малюка з простором.
+      </p>
+
+      <form onsubmit="handlePadFormSubmit(event)">
+        <input type="hidden" id="padModalProgramInput" value="Пробний день">
+
+        <div class="form-group">
+          <label for="padModalName">Ваше ім'я:</label>
+          <input type="text" id="padModalName" name="parentName" class="form-control" placeholder="Ірина чи Дмитро" required>
+        </div>
+
+        <div class="form-group">
+          <label for="padModalPhone">Номер телефону:</label>
+          <input type="tel" id="padModalPhone" name="phone" class="form-control" placeholder="+38 (068) 000-00-00" required>
+        </div>
+
+        <div class="form-group">
+          <label for="padModalAge">Вік малюка:</label>
+          <select id="padModalAge" name="childAge" class="form-control">
+            <option value="2-3 роки">2 – 3 роки (група Little Cubs)</option>
+            <option value="3-4 роки">3 – 4 роки (група Explorers)</option>
+            <option value="4-6 років">4 – 6 років (підготовка до школи)</option>
+          </select>
+        </div>
+
+        <button type="submit" class="pad-btn pad-btn-gold pad-btn-lg" style="width: 100%; margin-top: 10px;">
+          Записатися на екскурсію 🧸
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- СКРИПТИ -->
+  <script src="https://cdn.jsdelivr.net/npm/simple-notify@1.0.6/dist/simple-notify.min.js"></script>
+  <script src="./src/js/paddington.js"></script>
+</body>
+</html>

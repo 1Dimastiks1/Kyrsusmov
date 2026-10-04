@@ -194,7 +194,7 @@ h1, h2, h3, h4 {
   cursor: pointer;
   text-decoration: none;
   transition: var(--pad-transition);
-  white-space: nowrap;
+ 
 }
 
 .pad-btn-gold {
@@ -372,10 +372,11 @@ h1, h2, h3, h4 {
 .pad-nav-list {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 30px;
   list-style: none;
   margin: 0;
   padding: 0;
+
 }
 
 .pad-nav-link {
@@ -1297,6 +1298,7 @@ h1, h2, h3, h4 {
   transition: transform 0.3s ease;
 }
 
+
 .pad-faq-item.active .pad-faq-icon {
   transform: rotate(45deg);
   color: #f43f5e;
@@ -1581,6 +1583,7 @@ h1, h2, h3, h4 {
   background: #ffffff;
 }
 
+
 /* ================= АДАПТИВНІСТЬ ================= */
 @media (max-width: 1080px) {
   .pad-top-bar {
@@ -1597,7 +1600,7 @@ h1, h2, h3, h4 {
     background: #fffdf8;
     flex-direction: column;
     padding: 24px;
-    gap: 12px;
+    gap: 40px;
     overflow-y: auto;
     z-index: 1200;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
@@ -1720,6 +1723,9 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 480px) {
+  .pad-quiz-section {
+      display: none;
+    }
     .pad-btn {
         opacity: 1;
       }
@@ -1774,9 +1780,15 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 360px) {
-  .pad-btn {
-    opacity: 0;
+  .pad-review-card{
+    width: 300px;
   }
+  .pad-program-card {
+   width: 300px;
+  }
+.pad-quiz-section {
+  display: none;
+}
   .pad-container {
     padding: 0 12px;
   }

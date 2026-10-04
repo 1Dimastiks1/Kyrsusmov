@@ -18,6 +18,16 @@
 </head>
 <body>
 
+  <!-- ПРОГРЕС-БАР ПРОКРУТКИ -->
+  <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+  <!-- ПРОМО-БАНЕР -->
+  <div class="promo-top-bar" id="promoBar">
+    🔥 Осінній набір 2026 — безкоштовне пробне заняття для нових учнів!
+    <a href="#quiz">Пройти тест →</a>
+    <button class="promo-close" onclick="closePromoBar()" aria-label="Закрити">✕</button>
+  </div>
+
     <!-- ================= ВЕРХНЯ КОНТАКТНА ПАНЕЛЬ ================= -->
   <div class="header-top-bar">
     <div class="container header-top-inner">
@@ -90,11 +100,11 @@
             Твій надійний простір для <span class="highlight-blue">вільного володіння</span> іноземними мовами
           </h1>
 
-          <p class="hero-desc">
+          <p class="hero-desc reveal reveal-delay-1">
             Провідна мережа мовних центрів у Кам'янці-Подільському. Вивчайте <strong>англійську, польську, німецьку, італійську та іспанську</strong> за автентичними програмами Oxford та Cambridge. Гарантована підготовка до <strong>НМТ / ЗНО та іспитів IELTS, TOEFL, CEFR</strong>.
           </p>
 
-          <div class="hero-actions">
+          <div class="hero-actions reveal reveal-delay-2">
             <a href="#quiz" class="btn btn-accent btn-lg">
               🎯 Пройти експрес-тест (2 хв)
             </a>
@@ -103,19 +113,27 @@
             </a>
           </div>
 
-          <div class="hero-stats-row">
+          <div class="hero-stats-row reveal reveal-delay-3">
             <div class="hero-stat-card">
-              <span class="hero-stat-num">5 500+</span>
+              <span class="hero-stat-num" data-counter="5500" data-suffix="+">5 500+</span>
               <span class="hero-stat-label">випускників здобули сертифікати CEFR</span>
             </div>
             <div class="hero-stat-card">
-              <span class="hero-stat-num">27 років</span>
+              <span class="hero-stat-num" data-counter="27" data-suffix=" років">27 років</span>
               <span class="hero-stat-label">бездоганної академічної репутації</span>
             </div>
             <div class="hero-stat-card">
-              <span class="hero-stat-num">5 мов</span>
+              <span class="hero-stat-num" data-counter="5" data-suffix=" мов">5 мов</span>
               <span class="hero-stat-label">для дітей від 2 років та дорослих</span>
             </div>
+          </div>
+
+          <!-- Скрол-хінт (ховається при скролі) -->
+          <div class="hero-scroll-hint" id="heroScrollHint">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+            Гортайте вниз
           </div>
         </div>
 
@@ -756,93 +774,121 @@
         </p>
       </div>
 
-      <div class="reviews-grid">
+      <!-- Карусель відгуків -->
+      <div class="reviews-carousel-wrapper">
+        <button class="reviews-arrow reviews-arrow-prev" id="reviewsCarouselPrev" aria-label="Попередній відгук">
+          ‹
+        </button>
 
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-quote">
-            «Як каже моя донька, що власне італійська дуже надихаюча мова, але я би додала, що багато залежить від викладача. Те, що на Київських курсах є особлива енергетика — це факт, тому що вона створювалася з любов'ю! Пані Ольга — дивовижно світла та енергійна людина. Донька закохалася в мову одразу!»
-          </p>
-          <div class="review-author-row">
-            <div class="review-avatar">ОО</div>
-            <div>
-              <div class="review-author-name">Олена Осадчук</div>
-              <div class="review-author-info">мама студентки відділення італійської мови</div>
+        <div class="reviews-carousel-viewport" id="reviewsCarouselViewport">
+          <div class="reviews-carousel-track" id="reviewsCarouselTrack">
+
+            <div class="review-carousel-slide">
+              <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-quote">
+                  «Як каже моя донька, що власне італійська дуже надихаюча мова, але я би додала, що багато залежить від викладача. Те, що на Київських курсах є особлива енергетика — це факт, тому що вона створювалася з любов'ю! Пані Ольга — дивовижно світла та енергійна людина. Донька закохалася в мову одразу!»
+                </p>
+                <div class="review-author-row">
+                  <div class="review-avatar">ОО</div>
+                  <div>
+                    <div class="review-author-name">Олена Осадчук</div>
+                    <div class="review-author-info">мама студентки відділення італійської мови</div>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <div class="review-carousel-slide">
+              <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-quote">
+                  «Зараз проходжу курс іспанської мови, можу сказати, що це одні з кращих курсів, на яких я була. Подобається те, що невеликі групи і є змога займатися офлайн та онлайн. Дуже подобається підхід нашого викладача Катерини, особливо те, що вона робить великий акцент на розмовні теми!»
+                </p>
+                <div class="review-author-row">
+                  <div class="review-avatar">ЮХ</div>
+                  <div>
+                    <div class="review-author-name">Юлія Хабенюк</div>
+                    <div class="review-author-info">студентка базової групи іспанської мови</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-carousel-slide">
+              <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-quote">
+                  «I really like First Kyiv Courses! After just one month of study, I felt that my English grew up, especially grammar that was pretty weak before. I can totally recommend you to all people who are looking for high-quality English courses in Kamianets!»
+                </p>
+                <div class="review-author-row">
+                  <div class="review-avatar">DV</div>
+                  <div>
+                    <div class="review-author-name">Denys Vovk</div>
+                    <div class="review-author-info">студент дорослої групи General English</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-carousel-slide">
+              <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-quote">
+                  «Взаємно дякуємо всій чудовій команді супер-вожатих! Вже вдруге ми з вами у літньому таборі English Summer Camp і вдруге позитивні емоції переповнюють! Дякуємо за драйв, щирість, любов до дітей та класно спланований відпочинок!»
+                </p>
+                <div class="review-author-row">
+                  <div class="review-avatar">ДГ</div>
+                  <div>
+                    <div class="review-author-name">Діана Гнаб</div>
+                    <div class="review-author-info">мама учасниці English Summer Camp</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-carousel-slide">
+              <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-quote">
+                  «Безмежно вдячна за гарну англійську, дитині завжди було неймовірно цікаво ходити на уроки. Віолетта отримала величезний запас слів та впевнено заговорила на рівні свого віку. Щиро дякую Першим Київським Курсам!»
+                </p>
+                <div class="review-author-row">
+                  <div class="review-avatar">КС</div>
+                  <div>
+                    <div class="review-author-name">Катерина Сергієнко</div>
+                    <div class="review-author-info">мама студентки групи «Англійська для дошкільнят»</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-carousel-slide">
+              <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-quote">
+                  «I consider these Courses to be very useful. We practice all 4 basic skills: listening, reading, writing, and speaking. Good balance between grammar and communicative practice, interesting topics and supportive atmosphere.»
+                </p>
+                <div class="review-author-row">
+                  <div class="review-avatar">RK</div>
+                  <div>
+                    <div class="review-author-name">Roman Kotyk</div>
+                    <div class="review-author-info">студент базової групи англійської мови</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-quote">
-            «Зараз проходжу курс іспанської мови, можу сказати, що це одні з кращих курсів, на яких я була. Подобається те, що невеликі групи і є змога займатися офлайн та онлайн. Дуже подобається підхід нашого викладача Катерини, особливо те, що вона робить великий акцент на розмовні теми!»
-          </p>
-          <div class="review-author-row">
-            <div class="review-avatar">ЮХ</div>
-            <div>
-              <div class="review-author-name">Юлія Хабенюк</div>
-              <div class="review-author-info">студентка базової групи іспанської мови</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-quote">
-            «I really like First Kyiv Courses! After just one month of study, I felt that my English grew up, especially grammar that was pretty weak before. I can totally recommend you to all people who are looking for high-quality English courses in Kamianets!»
-          </p>
-          <div class="review-author-row">
-            <div class="review-avatar">DV</div>
-            <div>
-              <div class="review-author-name">Denys Vovk</div>
-              <div class="review-author-info">студент дорослої групи General English</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-quote">
-            «Взаємно дякуємо всій чудовій команді супер-вожатих! Вже вдруге ми з вами у літньому таборі English Summer Camp і вдруге позитивні емоції переповнюють! Дякуємо за драйв, щирість, любов до дітей та класно спланований відпочинок!»
-          </p>
-          <div class="review-author-row">
-            <div class="review-avatar">ДГ</div>
-            <div>
-              <div class="review-author-name">Діана Гнаб</div>
-              <div class="review-author-info">мама учасниці English Summer Camp</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-quote">
-            «Безмежно вдячна за гарну англійську, дитині завжди було неймовірно цікаво ходити на уроки. Віолетта отримала величезний запас слів та впевнено заговорила на рівні свого віку. Щиро дякую Першим Київським Курсам!»
-          </p>
-          <div class="review-author-row">
-            <div class="review-avatar">КС</div>
-            <div>
-              <div class="review-author-name">Катерина Сергієнко</div>
-              <div class="review-author-info">мама студентки групи «Англійська для дошкільнят»</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-quote">
-            «I consider these Courses to be very useful. We practice all 4 basic skills: listening, reading, writing, and speaking. Good balance between grammar and communicative practice, interesting topics and supportive atmosphere.»
-          </p>
-          <div class="review-author-row">
-            <div class="review-avatar">RK</div>
-            <div>
-              <div class="review-author-name">Roman Kotyk</div>
-              <div class="review-author-info">студент базової групи англійської мови</div>
-            </div>
-          </div>
-        </div>
-
+        <button class="reviews-arrow reviews-arrow-next" id="reviewsCarouselNext" aria-label="Наступний відгук">
+          ›
+        </button>
       </div>
+
+      <!-- Індикатори-крапки для каруселі -->
+      <div class="reviews-carousel-dots" id="reviewsCarouselDots"></div>
     </div>
   </section>
 
@@ -1144,6 +1190,20 @@
       </div>
     </div>
   </div>
+
+  <!-- ================= ПЛАВАЮЧА КНОПКА ДЗВІНКА ================= -->
+  <div class="floating-call-btn" id="floatingCallBtn">
+    <span class="floating-call-tooltip">Зателефонувати нам!</span>
+    <a href="tel:+380673816438" class="floating-call-main" aria-label="Зателефонувати">
+      <span class="floating-call-ripple"></span>
+      📞
+    </a>
+  </div>
+
+  <!-- ================= КНОПКА «ВГОРУ» ================= -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Прокрутити вгору" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    ↑
+  </button>
 
   <script src="https://cdn.jsdelivr.net/npm/simple-notify@1.0.6/dist/simple-notify.min.js"></script>
   <script src="./src/js/main.js"></script>
